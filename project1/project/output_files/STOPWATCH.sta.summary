@@ -1,0 +1,161 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'MAINCLOCK'
+Slack : -2.329
+TNS   : -62.260
+
+Type  : Slow 1200mV 85C Model Setup 'clkdiv:CLOCKTO1SEC|clock_out'
+Slack : -0.515
+TNS   : -0.885
+
+Type  : Slow 1200mV 85C Model Hold 'MAINCLOCK'
+Slack : 0.343
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clkdiv:CLOCKTO1SEC|clock_out'
+Slack : 0.382
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'MAINCLOCK'
+Slack : -29.691
+TNS   : -223.370
+
+Type  : Slow 1200mV 85C Model Recovery 'MAINPUSHR'
+Slack : -27.138
+TNS   : -181.111
+
+Type  : Slow 1200mV 85C Model Recovery 'clkdiv:CLOCKTO1SEC|clock_out'
+Slack : -9.116
+TNS   : -19.760
+
+Type  : Slow 1200mV 85C Model Removal 'MAINPUSHR'
+Slack : -7.590
+TNS   : -37.470
+
+Type  : Slow 1200mV 85C Model Removal 'MAINCLOCK'
+Slack : -5.198
+TNS   : -15.936
+
+Type  : Slow 1200mV 85C Model Removal 'clkdiv:CLOCKTO1SEC|clock_out'
+Slack : 1.200
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'MAINPUSHR'
+Slack : -15.515
+TNS   : -1242.525
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'MAINCLOCK'
+Slack : -15.014
+TNS   : -1392.919
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clkdiv:CLOCKTO1SEC|clock_out'
+Slack : -1.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Setup 'MAINCLOCK'
+Slack : -2.026
+TNS   : -53.868
+
+Type  : Slow 1200mV 0C Model Setup 'clkdiv:CLOCKTO1SEC|clock_out'
+Slack : -0.347
+TNS   : -0.506
+
+Type  : Slow 1200mV 0C Model Hold 'MAINCLOCK'
+Slack : 0.298
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clkdiv:CLOCKTO1SEC|clock_out'
+Slack : 0.333
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'MAINCLOCK'
+Slack : -26.570
+TNS   : -202.287
+
+Type  : Slow 1200mV 0C Model Recovery 'MAINPUSHR'
+Slack : -24.260
+TNS   : -162.377
+
+Type  : Slow 1200mV 0C Model Recovery 'clkdiv:CLOCKTO1SEC|clock_out'
+Slack : -8.298
+TNS   : -17.864
+
+Type  : Slow 1200mV 0C Model Removal 'MAINPUSHR'
+Slack : -6.801
+TNS   : -33.480
+
+Type  : Slow 1200mV 0C Model Removal 'MAINCLOCK'
+Slack : -4.514
+TNS   : -13.658
+
+Type  : Slow 1200mV 0C Model Removal 'clkdiv:CLOCKTO1SEC|clock_out'
+Slack : 1.039
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'MAINPUSHR'
+Slack : -13.997
+TNS   : -1104.999
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'MAINCLOCK'
+Slack : -13.478
+TNS   : -1245.809
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clkdiv:CLOCKTO1SEC|clock_out'
+Slack : -1.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Setup 'MAINCLOCK'
+Slack : -0.827
+TNS   : -21.085
+
+Type  : Fast 1200mV 0C Model Setup 'clkdiv:CLOCKTO1SEC|clock_out'
+Slack : 0.158
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'MAINCLOCK'
+Slack : 0.178
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clkdiv:CLOCKTO1SEC|clock_out'
+Slack : 0.201
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'MAINCLOCK'
+Slack : -17.223
+TNS   : -130.567
+
+Type  : Fast 1200mV 0C Model Recovery 'MAINPUSHR'
+Slack : -15.503
+TNS   : -99.777
+
+Type  : Fast 1200mV 0C Model Recovery 'clkdiv:CLOCKTO1SEC|clock_out'
+Slack : -5.216
+TNS   : -11.485
+
+Type  : Fast 1200mV 0C Model Removal 'MAINPUSHR'
+Slack : -3.718
+TNS   : -19.332
+
+Type  : Fast 1200mV 0C Model Removal 'MAINCLOCK'
+Slack : -2.334
+TNS   : -7.126
+
+Type  : Fast 1200mV 0C Model Removal 'clkdiv:CLOCKTO1SEC|clock_out'
+Slack : 0.771
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'MAINPUSHR'
+Slack : -8.390
+TNS   : -637.021
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'MAINCLOCK'
+Slack : -8.185
+TNS   : -739.810
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clkdiv:CLOCKTO1SEC|clock_out'
+Slack : -1.000
+TNS   : -3.000
+
+------------------------------------------------------------

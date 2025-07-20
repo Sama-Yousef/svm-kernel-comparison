@@ -1,0 +1,743 @@
+Analysis & Synthesis report for STOPWATCH
+Mon Jan 10 17:27:42 2022
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Logic Cells Representing Combinational Loops
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: clkdiv:CLOCKTO1SEC
+ 13. Port Connectivity Checks: "disp_hex_mux:finaldisplay"
+ 14. Port Connectivity Checks: "MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:MIN_TENS"
+ 15. Port Connectivity Checks: "MIN_SEC_COUNTER:MYCLKCOUNT|d_ff:d2"
+ 16. Port Connectivity Checks: "MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES"
+ 17. Port Connectivity Checks: "MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d10"
+ 18. Port Connectivity Checks: "MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d0"
+ 19. Port Connectivity Checks: "MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:dl"
+ 20. Port Connectivity Checks: "MIN_SEC_COUNTER:MYCLKCOUNT|d_ff:d1"
+ 21. Port Connectivity Checks: "MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:SEC_TENS"
+ 22. Port Connectivity Checks: "MIN_SEC_COUNTER:MYCLKCOUNT|d_ff:d0"
+ 23. Port Connectivity Checks: "MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES"
+ 24. Port Connectivity Checks: "MIN_SEC_COUNTER:MYCLKCOUNT|ANDGCLK:A1|d_ff:DFF1|d_ff1:mydff"
+ 25. Port Connectivity Checks: "MIN_SEC_COUNTER:MYCLKCOUNT|ANDGCLK:A1|d_ff:DFF1"
+ 26. Post-Synthesis Netlist Statistics for Top Partition
+ 27. Elapsed Time Per Partition
+ 28. Analysis & Synthesis Messages
+ 29. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon Jan 10 17:27:42 2022       ;
+; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                      ; STOPWATCH                                   ;
+; Top-level Entity Name              ; STOPWATCH                                   ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 240                                         ;
+;     Total combinational functions  ; 240                                         ;
+;     Dedicated logic registers      ; 36                                          ;
+; Total registers                    ; 36                                          ;
+; Total pins                         ; 33                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE22F17C6       ;                    ;
+; Top-level entity name                                            ; STOPWATCH          ; STOPWATCH          ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 16          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-16        ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                 ;
++----------------------------------+-----------------+------------------------------+------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path             ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------------------+---------+
+; UPTO9COUNT.sv                    ; yes             ; User SystemVerilog HDL File  ; D:/ZC-CIE 239/project/UPTO9COUNT.sv      ;         ;
+; UPTO5C.sv                        ; yes             ; User SystemVerilog HDL File  ; D:/ZC-CIE 239/project/UPTO5C.sv          ;         ;
+; ToDisplay.sv                     ; yes             ; User SystemVerilog HDL File  ; D:/ZC-CIE 239/project/ToDisplay.sv       ;         ;
+; STOPWATCH.sv                     ; yes             ; User SystemVerilog HDL File  ; D:/ZC-CIE 239/project/STOPWATCH.sv       ;         ;
+; SerialLoad5.sv                   ; yes             ; User SystemVerilog HDL File  ; D:/ZC-CIE 239/project/SerialLoad5.sv     ;         ;
+; MIN_SEC_COUNTER.sv               ; yes             ; User SystemVerilog HDL File  ; D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv ;         ;
+; MAINFSM.sv                       ; yes             ; User SystemVerilog HDL File  ; D:/ZC-CIE 239/project/MAINFSM.sv         ;         ;
+; GATTEDCLOCKS.sv                  ; yes             ; User SystemVerilog HDL File  ; D:/ZC-CIE 239/project/GATTEDCLOCKS.sv    ;         ;
+; Disp_hex_mux.sv                  ; yes             ; User SystemVerilog HDL File  ; D:/ZC-CIE 239/project/Disp_hex_mux.sv    ;         ;
+; D_flip_flop.sv                   ; yes             ; User SystemVerilog HDL File  ; D:/ZC-CIE 239/project/D_flip_flop.sv     ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------------------+---------+
+
+
++---------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                   ;
++---------------------------------------------+-----------------+
+; Resource                                    ; Usage           ;
++---------------------------------------------+-----------------+
+; Estimated Total logic elements              ; 240             ;
+;                                             ;                 ;
+; Total combinational functions               ; 240             ;
+; Logic element usage by number of LUT inputs ;                 ;
+;     -- 4 input functions                    ; 127             ;
+;     -- 3 input functions                    ; 66              ;
+;     -- <=2 input functions                  ; 47              ;
+;                                             ;                 ;
+; Logic elements by mode                      ;                 ;
+;     -- normal mode                          ; 213             ;
+;     -- arithmetic mode                      ; 27              ;
+;                                             ;                 ;
+; Total registers                             ; 36              ;
+;     -- Dedicated logic registers            ; 36              ;
+;     -- I/O registers                        ; 0               ;
+;                                             ;                 ;
+; I/O pins                                    ; 33              ;
+;                                             ;                 ;
+; Embedded Multiplier 9-bit elements          ; 0               ;
+;                                             ;                 ;
+; Maximum fan-out node                        ; MAINCLOCK~input ;
+; Maximum fan-out                             ; 54              ;
+; Total fan-out                               ; 994             ;
+; Average fan-out                             ; 2.91            ;
++---------------------------------------------+-----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                           ;
++---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                             ; Entity Name     ; Library Name ;
++---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+-----------------+--------------+
+; |STOPWATCH                      ; 240 (1)             ; 36 (0)                    ; 0           ; 0            ; 0       ; 0         ; 33   ; 0            ; |STOPWATCH                                                                      ; STOPWATCH       ; work         ;
+;    |MAINFSM:MYFSM|              ; 10 (10)             ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MAINFSM:MYFSM                                                        ; MAINFSM         ; work         ;
+;    |MIN_SEC_COUNTER:MYCLKCOUNT| ; 152 (1)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT                                           ; MIN_SEC_COUNTER ; work         ;
+;       |ANDGCLK:A1|              ; 5 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|ANDGCLK:A1                                ; ANDGCLK         ; work         ;
+;          |d_ff:DFF1|            ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|ANDGCLK:A1|d_ff:DFF1                      ; d_ff            ; work         ;
+;             |d_ff1:mydff|       ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|ANDGCLK:A1|d_ff:DFF1|d_ff1:mydff          ; d_ff1           ; work         ;
+;       |UPTO5C:MIN_TENS|         ; 14 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:MIN_TENS                           ; UPTO5C          ; work         ;
+;          |d_ff:d0|              ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:MIN_TENS|d_ff:d0                   ; d_ff            ; work         ;
+;             |d_ff1:mydff|       ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:MIN_TENS|d_ff:d0|d_ff1:mydff       ; d_ff1           ; work         ;
+;          |d_ff:d1|              ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:MIN_TENS|d_ff:d1                   ; d_ff            ; work         ;
+;             |d_ff1:mydff|       ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:MIN_TENS|d_ff:d1|d_ff1:mydff       ; d_ff1           ; work         ;
+;          |d_ff:d2|              ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:MIN_TENS|d_ff:d2                   ; d_ff            ; work         ;
+;             |d_ff1:mydff|       ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:MIN_TENS|d_ff:d2|d_ff1:mydff       ; d_ff1           ; work         ;
+;       |UPTO5C:SEC_TENS|         ; 15 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:SEC_TENS                           ; UPTO5C          ; work         ;
+;          |d_ff:d0|              ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:SEC_TENS|d_ff:d0                   ; d_ff            ; work         ;
+;             |d_ff1:mydff|       ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:SEC_TENS|d_ff:d0|d_ff1:mydff       ; d_ff1           ; work         ;
+;          |d_ff:d1|              ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:SEC_TENS|d_ff:d1                   ; d_ff            ; work         ;
+;             |d_ff1:mydff|       ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:SEC_TENS|d_ff:d1|d_ff1:mydff       ; d_ff1           ; work         ;
+;          |d_ff:d2|              ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:SEC_TENS|d_ff:d2                   ; d_ff            ; work         ;
+;             |d_ff1:mydff|       ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:SEC_TENS|d_ff:d2|d_ff1:mydff       ; d_ff1           ; work         ;
+;       |UPTO9C:MIN_ONES|         ; 25 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES                           ; UPTO9C          ; work         ;
+;          |d_ff:d0|              ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES|d_ff:d0                   ; d_ff            ; work         ;
+;             |d_ff1:mydff|       ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES|d_ff:d0|d_ff1:mydff       ; d_ff1           ; work         ;
+;          |d_ff:d1|              ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES|d_ff:d1                   ; d_ff            ; work         ;
+;             |d_ff1:mydff|       ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES|d_ff:d1|d_ff1:mydff       ; d_ff1           ; work         ;
+;          |d_ff:d2|              ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES|d_ff:d2                   ; d_ff            ; work         ;
+;             |d_ff1:mydff|       ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES|d_ff:d2|d_ff1:mydff       ; d_ff1           ; work         ;
+;          |d_ff:d3|              ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES|d_ff:d3                   ; d_ff            ; work         ;
+;             |d_ff1:mydff|       ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES|d_ff:d3|d_ff1:mydff       ; d_ff1           ; work         ;
+;       |UPTO9C:SEC_ONES|         ; 25 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES                           ; UPTO9C          ; work         ;
+;          |d_ff:d0|              ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES|d_ff:d0                   ; d_ff            ; work         ;
+;             |d_ff1:mydff|       ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES|d_ff:d0|d_ff1:mydff       ; d_ff1           ; work         ;
+;          |d_ff:d1|              ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES|d_ff:d1                   ; d_ff            ; work         ;
+;             |d_ff1:mydff|       ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES|d_ff:d1|d_ff1:mydff       ; d_ff1           ; work         ;
+;          |d_ff:d2|              ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES|d_ff:d2                   ; d_ff            ; work         ;
+;             |d_ff1:mydff|       ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES|d_ff:d2|d_ff1:mydff       ; d_ff1           ; work         ;
+;          |d_ff:d3|              ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES|d_ff:d3                   ; d_ff            ; work         ;
+;             |d_ff1:mydff|       ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES|d_ff:d3|d_ff1:mydff       ; d_ff1           ; work         ;
+;       |d_ff:d0|                 ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|d_ff:d0                                   ; d_ff            ; work         ;
+;          |d_ff1:mydff|          ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|d_ff:d0|d_ff1:mydff                       ; d_ff1           ; work         ;
+;       |d_ff:d1|                 ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|d_ff:d1                                   ; d_ff            ; work         ;
+;          |d_ff1:mydff|          ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|d_ff:d1|d_ff1:mydff                       ; d_ff1           ; work         ;
+;       |d_ff:d2|                 ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|d_ff:d2                                   ; d_ff            ; work         ;
+;          |d_ff1:mydff|          ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|d_ff:d2|d_ff1:mydff                       ; d_ff1           ; work         ;
+;       |serielload5:load5min|    ; 53 (1)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min                      ; serielload5     ; work         ;
+;          |d_ff:d10|             ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d10             ; d_ff            ; work         ;
+;             |d_ff1:mydff|       ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d10|d_ff1:mydff ; d_ff1           ; work         ;
+;          |d_ff:d1|              ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d1              ; d_ff            ; work         ;
+;             |d_ff1:mydff|       ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d1|d_ff1:mydff  ; d_ff1           ; work         ;
+;          |d_ff:d2|              ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d2              ; d_ff            ; work         ;
+;             |d_ff1:mydff|       ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d2|d_ff1:mydff  ; d_ff1           ; work         ;
+;          |d_ff:d3|              ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d3              ; d_ff            ; work         ;
+;             |d_ff1:mydff|       ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d3|d_ff1:mydff  ; d_ff1           ; work         ;
+;          |d_ff:d4|              ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d4              ; d_ff            ; work         ;
+;             |d_ff1:mydff|       ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d4|d_ff1:mydff  ; d_ff1           ; work         ;
+;          |d_ff:d5|              ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d5              ; d_ff            ; work         ;
+;             |d_ff1:mydff|       ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d5|d_ff1:mydff  ; d_ff1           ; work         ;
+;          |d_ff:d6|              ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d6              ; d_ff            ; work         ;
+;             |d_ff1:mydff|       ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d6|d_ff1:mydff  ; d_ff1           ; work         ;
+;          |d_ff:d7|              ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d7              ; d_ff            ; work         ;
+;             |d_ff1:mydff|       ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d7|d_ff1:mydff  ; d_ff1           ; work         ;
+;          |d_ff:d8|              ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d8              ; d_ff            ; work         ;
+;             |d_ff1:mydff|       ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d8|d_ff1:mydff  ; d_ff1           ; work         ;
+;          |d_ff:d9|              ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d9              ; d_ff            ; work         ;
+;             |d_ff1:mydff|       ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d9|d_ff1:mydff  ; d_ff1           ; work         ;
+;          |d_ff:dl|              ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:dl              ; d_ff            ; work         ;
+;             |d_ff1:mydff|       ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:dl|d_ff1:mydff  ; d_ff1           ; work         ;
+;    |Todisplay:MYDISPLAY|        ; 14 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|Todisplay:MYDISPLAY                                                  ; Todisplay       ; work         ;
+;       |mux2x1:mymux01|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|Todisplay:MYDISPLAY|mux2x1:mymux01                                   ; mux2x1          ; work         ;
+;       |mux2x1:mymux02|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|Todisplay:MYDISPLAY|mux2x1:mymux02                                   ; mux2x1          ; work         ;
+;       |mux2x1:mymux03|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|Todisplay:MYDISPLAY|mux2x1:mymux03                                   ; mux2x1          ; work         ;
+;       |mux2x1:mymux10|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|Todisplay:MYDISPLAY|mux2x1:mymux10                                   ; mux2x1          ; work         ;
+;       |mux2x1:mymux11|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|Todisplay:MYDISPLAY|mux2x1:mymux11                                   ; mux2x1          ; work         ;
+;       |mux2x1:mymux12|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|Todisplay:MYDISPLAY|mux2x1:mymux12                                   ; mux2x1          ; work         ;
+;       |mux2x1:mymux13|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|Todisplay:MYDISPLAY|mux2x1:mymux13                                   ; mux2x1          ; work         ;
+;       |mux2x1:mymux21|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|Todisplay:MYDISPLAY|mux2x1:mymux21                                   ; mux2x1          ; work         ;
+;       |mux2x1:mymux22|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|Todisplay:MYDISPLAY|mux2x1:mymux22                                   ; mux2x1          ; work         ;
+;       |mux2x1:mymux23|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|Todisplay:MYDISPLAY|mux2x1:mymux23                                   ; mux2x1          ; work         ;
+;       |mux2x1:mymux30|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|Todisplay:MYDISPLAY|mux2x1:mymux30                                   ; mux2x1          ; work         ;
+;       |mux2x1:mymux31|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|Todisplay:MYDISPLAY|mux2x1:mymux31                                   ; mux2x1          ; work         ;
+;       |mux2x1:mymux32|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|Todisplay:MYDISPLAY|mux2x1:mymux32                                   ; mux2x1          ; work         ;
+;       |mux2x1:mymux33|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|Todisplay:MYDISPLAY|mux2x1:mymux33                                   ; mux2x1          ; work         ;
+;    |clkdiv:CLOCKTO1SEC|         ; 40 (40)             ; 29 (29)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|clkdiv:CLOCKTO1SEC                                                   ; clkdiv          ; work         ;
+;    |disp_hex_mux:finaldisplay|  ; 23 (23)             ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |STOPWATCH|disp_hex_mux:finaldisplay                                            ; disp_hex_mux    ; work         ;
++---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+-----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------+
+; Logic Cells Representing Combinational Loops                                   ;
++---------------------------------------------------------------------------+----+
+; Logic Cell Name                                                           ;    ;
++---------------------------------------------------------------------------+----+
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES|d_ff:d3|d_ff1:mydff|q~0        ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES|d_ff:d3|d_ff1:mydff|q~0        ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:SEC_TENS|d_ff:d2|d_ff1:mydff|q~0        ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES|d_ff:d2|d_ff1:mydff|q~0        ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:MIN_TENS|d_ff:d2|d_ff1:mydff|q~0        ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES|d_ff:d2|d_ff1:mydff|q~0        ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:SEC_TENS|d_ff:d1|d_ff1:mydff|q~0        ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES|d_ff:d1|d_ff1:mydff|q~0        ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:MIN_TENS|d_ff:d1|d_ff1:mydff|q~0        ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES|d_ff:d1|d_ff1:mydff|q~0        ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES|d_ff:d0|d_ff1:mydff|q~0        ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:SEC_TENS|d_ff:d0|d_ff1:mydff|q~0        ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:MIN_TENS|d_ff:d0|d_ff1:mydff|q~0        ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES|d_ff:d0|d_ff1:mydff|q~0        ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|d_ff:d1|d_ff1:mydff|q~0                        ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d10|d_ff1:mydff|q~0  ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES|d_ff:d3|d_ff1:mydff|n1~0       ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES|d_ff:d3|d_ff1:mydff|n1~1       ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|ANDGCLK:A1|d_ff:DFF1|d_ff1:mydff|q~0           ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES|d_ff:d3|d_ff1:mydff|n1~0       ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES|d_ff:d3|d_ff1:mydff|n1~1       ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|d_ff:d0|d_ff1:mydff|q~0                        ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:SEC_TENS|d_ff:d2|d_ff1:mydff|n1~0       ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:SEC_TENS|d_ff:d2|d_ff1:mydff|n1~1       ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES|d_ff:d2|d_ff1:mydff|n1~0       ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES|d_ff:d2|d_ff1:mydff|n1~1       ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|d_ff:d2|d_ff1:mydff|q~0                        ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:MIN_TENS|d_ff:d2|d_ff1:mydff|n1~0       ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:MIN_TENS|d_ff:d2|d_ff1:mydff|n1~1       ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES|d_ff:d2|d_ff1:mydff|n1~0       ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES|d_ff:d2|d_ff1:mydff|n1~1       ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:SEC_TENS|d_ff:d1|d_ff1:mydff|n1~0       ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:SEC_TENS|d_ff:d1|d_ff1:mydff|n1~1       ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES|d_ff:d1|d_ff1:mydff|n1~0       ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES|d_ff:d1|d_ff1:mydff|n1~1       ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:MIN_TENS|d_ff:d1|d_ff1:mydff|n1~0       ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:MIN_TENS|d_ff:d1|d_ff1:mydff|n1~1       ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES|d_ff:d1|d_ff1:mydff|n1~0       ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES|d_ff:d1|d_ff1:mydff|n1~1       ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES|d_ff:d0|d_ff1:mydff|n1~0       ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES|d_ff:d0|d_ff1:mydff|n1~1       ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:SEC_TENS|d_ff:d0|d_ff1:mydff|n1~0       ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:SEC_TENS|d_ff:d0|d_ff1:mydff|n1~1       ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:MIN_TENS|d_ff:d0|d_ff1:mydff|n1~0       ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:MIN_TENS|d_ff:d0|d_ff1:mydff|n1~1       ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES|d_ff:d0|d_ff1:mydff|n1~0       ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES|d_ff:d0|d_ff1:mydff|n1~1       ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|d_ff:d1|d_ff1:mydff|n1~0                       ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|d_ff:d1|d_ff1:mydff|n1~1                       ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d10|d_ff1:mydff|n1~0 ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d10|d_ff1:mydff|n1~1 ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|ANDGCLK:A1|d_ff:DFF1|d_ff1:mydff|n1~0          ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|ANDGCLK:A1|d_ff:DFF1|d_ff1:mydff|n1~1          ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|d_ff:d0|d_ff1:mydff|n1~0                       ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|d_ff:d0|d_ff1:mydff|n1~1                       ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|d_ff:d2|d_ff1:mydff|n1~0                       ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|d_ff:d2|d_ff1:mydff|n1~1                       ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d9|d_ff1:mydff|n1~0  ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d9|d_ff1:mydff|n1~1  ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d9|d_ff1:mydff|q~0   ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:dl|d_ff1:mydff|q~0   ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d8|d_ff1:mydff|n1~0  ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d8|d_ff1:mydff|n1~1  ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d8|d_ff1:mydff|q~0   ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:dl|d_ff1:mydff|n1~0  ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:dl|d_ff1:mydff|n1~1  ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d7|d_ff1:mydff|n1~0  ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d7|d_ff1:mydff|n1~1  ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d7|d_ff1:mydff|q~0   ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d6|d_ff1:mydff|n1~0  ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d6|d_ff1:mydff|n1~1  ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d6|d_ff1:mydff|q~0   ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d5|d_ff1:mydff|n1~0  ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d5|d_ff1:mydff|n1~1  ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d5|d_ff1:mydff|q~0   ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d4|d_ff1:mydff|n1~0  ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d4|d_ff1:mydff|n1~1  ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d4|d_ff1:mydff|q~0   ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d3|d_ff1:mydff|n1~0  ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d3|d_ff1:mydff|n1~1  ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d3|d_ff1:mydff|q~0   ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d2|d_ff1:mydff|n1~0  ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d2|d_ff1:mydff|n1~1  ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d2|d_ff1:mydff|q~0   ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d1|d_ff1:mydff|n1~0  ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d1|d_ff1:mydff|n1~1  ;    ;
+; MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d1|d_ff1:mydff|q~0   ;    ;
+; Number of logic cells representing combinational loops                    ; 87 ;
++---------------------------------------------------------------------------+----+
+Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; MAINFSM:MYFSM|state_current[3..31]     ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 29 ;                                        ;
++----------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 36    ;
+; Number of registers using Synchronous Clear  ; 28    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 35    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 1     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |STOPWATCH|disp_hex_mux:finaldisplay|Mux0 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: clkdiv:CLOCKTO1SEC ;
++----------------+------------------------------+-----------------+
+; Parameter Name ; Value                        ; Type            ;
++----------------+------------------------------+-----------------+
+; DIVISOR        ; 0000000000000000000000110010 ; Unsigned Binary ;
++----------------+------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "disp_hex_mux:finaldisplay" ;
++-------------+-------+----------+----------------------+
+; Port        ; Type  ; Severity ; Details              ;
++-------------+-------+----------+----------------------+
+; dp_in[1..0] ; Input ; Info     ; Stuck at VCC         ;
+; dp_in[3]    ; Input ; Info     ; Stuck at VCC         ;
+; dp_in[2]    ; Input ; Info     ; Stuck at GND         ;
++-------------+-------+----------+----------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:MIN_TENS"                                                              ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                      ;
+; Qbar ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIN_SEC_COUNTER:MYCLKCOUNT|d_ff:d2"                                                                      ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; qbar ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES"                                                              ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Qbar ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d10"                           ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; qbar ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d0"                                                                                                                           ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                                                            ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; d     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:dl"                                                                                                                            ;
++-------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                                                                                            ;
++-------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; d     ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; d[-1] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; qbar  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
++-------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIN_SEC_COUNTER:MYCLKCOUNT|d_ff:d1"                                                                      ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; qbar ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:SEC_TENS"                                                              ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Qbar ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIN_SEC_COUNTER:MYCLKCOUNT|d_ff:d0"                                                                      ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; qbar ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES"                                                              ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Qbar ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIN_SEC_COUNTER:MYCLKCOUNT|ANDGCLK:A1|d_ff:DFF1|d_ff1:mydff"                                                                                                                         ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; set     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; set[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "MIN_SEC_COUNTER:MYCLKCOUNT|ANDGCLK:A1|d_ff:DFF1"                                                         ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; qbar ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 33                          ;
+; cycloneiii_ff         ; 36                          ;
+;     CLR               ; 7                           ;
+;     CLR SCLR          ; 28                          ;
+;     ENA               ; 1                           ;
+; cycloneiii_lcell_comb ; 251                         ;
+;     arith             ; 27                          ;
+;         2 data inputs ; 27                          ;
+;     normal            ; 224                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 12                          ;
+;         2 data inputs ; 18                          ;
+;         3 data inputs ; 66                          ;
+;         4 data inputs ; 127                         ;
+;                       ;                             ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 2.87                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Mon Jan 10 17:27:35 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off STOPWATCH -c STOPWATCH
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 4 design units, including 4 entities, in source file upto9count.sv
+    Info (12023): Found entity 1: logicblockof9d1 File: D:/ZC-CIE 239/project/UPTO9COUNT.sv Line: 1
+    Info (12023): Found entity 2: logicblockof9d2 File: D:/ZC-CIE 239/project/UPTO9COUNT.sv Line: 16
+    Info (12023): Found entity 3: logicblockof9d3 File: D:/ZC-CIE 239/project/UPTO9COUNT.sv Line: 31
+    Info (12023): Found entity 4: UPTO9C File: D:/ZC-CIE 239/project/UPTO9COUNT.sv Line: 47
+Info (12021): Found 3 design units, including 3 entities, in source file upto5c.sv
+    Info (12023): Found entity 1: logicblockof5d1 File: D:/ZC-CIE 239/project/UPTO5C.sv Line: 1
+    Info (12023): Found entity 2: logicblockof5d2 File: D:/ZC-CIE 239/project/UPTO5C.sv Line: 14
+    Info (12023): Found entity 3: UPTO5C File: D:/ZC-CIE 239/project/UPTO5C.sv Line: 28
+Info (12021): Found 2 design units, including 2 entities, in source file todisplay.sv
+    Info (12023): Found entity 1: mux2x1 File: D:/ZC-CIE 239/project/ToDisplay.sv Line: 2
+    Info (12023): Found entity 2: Todisplay File: D:/ZC-CIE 239/project/ToDisplay.sv Line: 10
+Info (12021): Found 1 design units, including 1 entities, in source file stopwatch_tb.sv
+    Info (12023): Found entity 1: STOPWATCH_TB File: D:/ZC-CIE 239/project/STOPWATCH_TB.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file stopwatch.sv
+    Info (12023): Found entity 1: STOPWATCH File: D:/ZC-CIE 239/project/STOPWATCH.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file serialload5.sv
+    Info (12023): Found entity 1: serielload5 File: D:/ZC-CIE 239/project/SerialLoad5.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file min_sec_counter.sv
+    Info (12023): Found entity 1: MIN_SEC_COUNTER File: D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv Line: 1
+Info (12021): Found 2 design units, including 2 entities, in source file mainfsm.sv
+    Info (12023): Found entity 1: MAINFSM File: D:/ZC-CIE 239/project/MAINFSM.sv Line: 1
+    Info (12023): Found entity 2: clkdiv File: D:/ZC-CIE 239/project/MAINFSM.sv Line: 138
+Info (12021): Found 1 design units, including 1 entities, in source file gattedclocks.sv
+    Info (12023): Found entity 1: ANDGCLK File: D:/ZC-CIE 239/project/GATTEDCLOCKS.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file disp_hex_mux.sv
+    Info (12023): Found entity 1: disp_hex_mux File: D:/ZC-CIE 239/project/Disp_hex_mux.sv Line: 1
+Info (12021): Found 2 design units, including 2 entities, in source file d_flip_flop.sv
+    Info (12023): Found entity 1: d_ff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 2
+    Info (12023): Found entity 2: d_ff1 File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at D_flip_flop.sv(15): created implicit net for "restb" File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at D_flip_flop.sv(16): created implicit net for "setb" File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at D_flip_flop.sv(17): created implicit net for "t1" File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 17
+Warning (10236): Verilog HDL Implicit Net warning at D_flip_flop.sv(17): created implicit net for "t2" File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 17
+Warning (10236): Verilog HDL Implicit Net warning at D_flip_flop.sv(17): created implicit net for "t4" File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 17
+Warning (10236): Verilog HDL Implicit Net warning at D_flip_flop.sv(19): created implicit net for "t3" File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 19
+Info (12127): Elaborating entity "STOPWATCH" for the top level hierarchy
+Info (12128): Elaborating entity "clkdiv" for hierarchy "clkdiv:CLOCKTO1SEC" File: D:/ZC-CIE 239/project/STOPWATCH.sv Line: 9
+Info (12128): Elaborating entity "MAINFSM" for hierarchy "MAINFSM:MYFSM" File: D:/ZC-CIE 239/project/STOPWATCH.sv Line: 11
+Info (12128): Elaborating entity "MIN_SEC_COUNTER" for hierarchy "MIN_SEC_COUNTER:MYCLKCOUNT" File: D:/ZC-CIE 239/project/STOPWATCH.sv Line: 14
+Info (12128): Elaborating entity "ANDGCLK" for hierarchy "MIN_SEC_COUNTER:MYCLKCOUNT|ANDGCLK:A1" File: D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv Line: 6
+Info (12128): Elaborating entity "d_ff" for hierarchy "MIN_SEC_COUNTER:MYCLKCOUNT|ANDGCLK:A1|d_ff:DFF1" File: D:/ZC-CIE 239/project/GATTEDCLOCKS.sv Line: 3
+Info (12128): Elaborating entity "d_ff1" for hierarchy "MIN_SEC_COUNTER:MYCLKCOUNT|ANDGCLK:A1|d_ff:DFF1|d_ff1:mydff" File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+Info (12128): Elaborating entity "UPTO9C" for hierarchy "MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES" File: D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv Line: 8
+Info (12128): Elaborating entity "logicblockof9d1" for hierarchy "MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES|logicblockof9d1:LB1" File: D:/ZC-CIE 239/project/UPTO9COUNT.sv Line: 51
+Info (12128): Elaborating entity "logicblockof9d2" for hierarchy "MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES|logicblockof9d2:LB2" File: D:/ZC-CIE 239/project/UPTO9COUNT.sv Line: 52
+Info (12128): Elaborating entity "logicblockof9d3" for hierarchy "MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES|logicblockof9d3:LB3" File: D:/ZC-CIE 239/project/UPTO9COUNT.sv Line: 53
+Info (12128): Elaborating entity "UPTO5C" for hierarchy "MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:SEC_TENS" File: D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv Line: 12
+Info (12128): Elaborating entity "logicblockof5d1" for hierarchy "MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:SEC_TENS|logicblockof5d1:LB1" File: D:/ZC-CIE 239/project/UPTO5C.sv Line: 32
+Info (12128): Elaborating entity "logicblockof5d2" for hierarchy "MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:SEC_TENS|logicblockof5d2:LB2" File: D:/ZC-CIE 239/project/UPTO5C.sv Line: 33
+Info (12128): Elaborating entity "serielload5" for hierarchy "MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min" File: D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv Line: 15
+Info (12128): Elaborating entity "mux2x1" for hierarchy "MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|mux2x1:muxA" File: D:/ZC-CIE 239/project/SerialLoad5.sv Line: 7
+Info (12128): Elaborating entity "Todisplay" for hierarchy "Todisplay:MYDISPLAY" File: D:/ZC-CIE 239/project/STOPWATCH.sv Line: 16
+Info (12128): Elaborating entity "disp_hex_mux" for hierarchy "disp_hex_mux:finaldisplay" File: D:/ZC-CIE 239/project/STOPWATCH.sv Line: 18
+Warning (10230): Verilog HDL assignment warning at Disp_hex_mux.sv(26): truncated value with size 32 to match size of target (4) File: D:/ZC-CIE 239/project/Disp_hex_mux.sv Line: 26
+Warning (12020): Port "ordered port 1" on the entity instantiation of "mydff" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+Warning (12020): Port "ordered port 1" on the entity instantiation of "mydff" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+Warning (12020): Port "ordered port 1" on the entity instantiation of "mydff" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+Warning (12020): Port "ordered port 1" on the entity instantiation of "mydff" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+Warning (12020): Port "ordered port 1" on the entity instantiation of "mydff" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+Warning (12020): Port "ordered port 1" on the entity instantiation of "mydff" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+Warning (12020): Port "ordered port 1" on the entity instantiation of "mydff" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+Warning (12020): Port "ordered port 1" on the entity instantiation of "mydff" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+Warning (12020): Port "ordered port 1" on the entity instantiation of "mydff" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+Warning (12020): Port "ordered port 1" on the entity instantiation of "mydff" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+Warning (12020): Port "ordered port 1" on the entity instantiation of "mydff" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+Warning (12020): Port "ordered port 1" on the entity instantiation of "mydff" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+Warning (12020): Port "ordered port 1" on the entity instantiation of "mydff" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+Warning (12020): Port "ordered port 1" on the entity instantiation of "mydff" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+Warning (12020): Port "ordered port 1" on the entity instantiation of "mydff" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+Warning (12020): Port "ordered port 1" on the entity instantiation of "mydff" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+Warning (12020): Port "ordered port 1" on the entity instantiation of "mydff" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+Warning (12020): Port "ordered port 1" on the entity instantiation of "mydff" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+Warning (12020): Port "ordered port 1" on the entity instantiation of "mydff" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+Warning (12020): Port "ordered port 1" on the entity instantiation of "mydff" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+Warning (12020): Port "ordered port 1" on the entity instantiation of "mydff" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+Warning (12020): Port "ordered port 1" on the entity instantiation of "mydff" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+Warning (12020): Port "ordered port 1" on the entity instantiation of "mydff" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+Warning (12020): Port "ordered port 1" on the entity instantiation of "mydff" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+Warning (12020): Port "ordered port 1" on the entity instantiation of "mydff" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+Warning (12020): Port "ordered port 1" on the entity instantiation of "mydff" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+Warning (12020): Port "ordered port 1" on the entity instantiation of "mydff" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+Warning (12020): Port "ordered port 1" on the entity instantiation of "mydff" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+Warning (12020): Port "ordered port 1" on the entity instantiation of "mydff" is connected to a signal of width 32. The formal width of the signal in the module is 1.  The extra bits will be ignored. File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+Warning (12241): 11 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "MAINSVNSG2[0]" is stuck at GND File: D:/ZC-CIE 239/project/STOPWATCH.sv Line: 4
+Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file D:/ZC-CIE 239/project/output_files/STOPWATCH.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 273 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 28 output pins
+    Info (21061): Implemented 240 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 40 warnings
+    Info: Peak virtual memory: 4833 megabytes
+    Info: Processing ended: Mon Jan 10 17:27:42 2022
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:17
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in D:/ZC-CIE 239/project/output_files/STOPWATCH.map.smsg.
+
+

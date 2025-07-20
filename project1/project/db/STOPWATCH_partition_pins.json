@@ -1,0 +1,137 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "DIGIT7SEG[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DIGIT7SEG[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DIGIT7SEG[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DIGIT7SEG[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DIGIT7SEG[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DIGIT7SEG[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DIGIT7SEG[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DIGIT7SEG[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ENABLE7SEG[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ENABLE7SEG[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ENABLE7SEG[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ENABLE7SEG[3]",
+					"strict" : false
+				},
+				{
+					"name" : "MAINSVNSG0[0]",
+					"strict" : false
+				},
+				{
+					"name" : "MAINSVNSG0[1]",
+					"strict" : false
+				},
+				{
+					"name" : "MAINSVNSG0[2]",
+					"strict" : false
+				},
+				{
+					"name" : "MAINSVNSG0[3]",
+					"strict" : false
+				},
+				{
+					"name" : "MAINSVNSG1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "MAINSVNSG1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "MAINSVNSG1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "MAINSVNSG1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "MAINSVNSG2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "MAINSVNSG2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "MAINSVNSG2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "MAINSVNSG3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "MAINSVNSG3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "MAINSVNSG3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "MAINSVNSG3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "MAINDIP1S",
+					"strict" : false
+				},
+				{
+					"name" : "MAINPUSHL",
+					"strict" : false
+				},
+				{
+					"name" : "MAINDIP2M",
+					"strict" : false
+				},
+				{
+					"name" : "MAINPUSHR",
+					"strict" : false
+				},
+				{
+					"name" : "MAINCLOCK",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

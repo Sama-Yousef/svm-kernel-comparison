@@ -1,0 +1,27 @@
+Info (10281): Verilog HDL Declaration information at UPTO9COUNT.sv(2): object "a1" differs only in case from object "A1" in the same scope File: D:/ZC-CIE 239/project/UPTO9COUNT.sv Line: 2
+Info (10281): Verilog HDL Declaration information at UPTO9COUNT.sv(2): object "a2" differs only in case from object "A2" in the same scope File: D:/ZC-CIE 239/project/UPTO9COUNT.sv Line: 2
+Info (10281): Verilog HDL Declaration information at UPTO9COUNT.sv(2): object "a3" differs only in case from object "A3" in the same scope File: D:/ZC-CIE 239/project/UPTO9COUNT.sv Line: 2
+Info (10281): Verilog HDL Declaration information at UPTO9COUNT.sv(2): object "a4" differs only in case from object "A4" in the same scope File: D:/ZC-CIE 239/project/UPTO9COUNT.sv Line: 2
+Info (10281): Verilog HDL Declaration information at UPTO9COUNT.sv(2): object "a5" differs only in case from object "A5" in the same scope File: D:/ZC-CIE 239/project/UPTO9COUNT.sv Line: 2
+Info (10281): Verilog HDL Declaration information at UPTO9COUNT.sv(17): object "a1" differs only in case from object "A1" in the same scope File: D:/ZC-CIE 239/project/UPTO9COUNT.sv Line: 17
+Info (10281): Verilog HDL Declaration information at UPTO9COUNT.sv(17): object "a2" differs only in case from object "A2" in the same scope File: D:/ZC-CIE 239/project/UPTO9COUNT.sv Line: 17
+Info (10281): Verilog HDL Declaration information at UPTO9COUNT.sv(17): object "a3" differs only in case from object "A3" in the same scope File: D:/ZC-CIE 239/project/UPTO9COUNT.sv Line: 17
+Info (10281): Verilog HDL Declaration information at UPTO9COUNT.sv(17): object "a4" differs only in case from object "A4" in the same scope File: D:/ZC-CIE 239/project/UPTO9COUNT.sv Line: 17
+Info (10281): Verilog HDL Declaration information at UPTO9COUNT.sv(17): object "a5" differs only in case from object "A5" in the same scope File: D:/ZC-CIE 239/project/UPTO9COUNT.sv Line: 17
+Info (10281): Verilog HDL Declaration information at UPTO9COUNT.sv(32): object "a1" differs only in case from object "A1" in the same scope File: D:/ZC-CIE 239/project/UPTO9COUNT.sv Line: 32
+Info (10281): Verilog HDL Declaration information at UPTO9COUNT.sv(32): object "a2" differs only in case from object "A2" in the same scope File: D:/ZC-CIE 239/project/UPTO9COUNT.sv Line: 32
+Info (10281): Verilog HDL Declaration information at UPTO9COUNT.sv(32): object "a3" differs only in case from object "A3" in the same scope File: D:/ZC-CIE 239/project/UPTO9COUNT.sv Line: 32
+Info (10281): Verilog HDL Declaration information at UPTO9COUNT.sv(32): object "a4" differs only in case from object "A4" in the same scope File: D:/ZC-CIE 239/project/UPTO9COUNT.sv Line: 32
+Info (10281): Verilog HDL Declaration information at UPTO9COUNT.sv(32): object "a5" differs only in case from object "A5" in the same scope File: D:/ZC-CIE 239/project/UPTO9COUNT.sv Line: 32
+Info (10281): Verilog HDL Declaration information at UPTO9COUNT.sv(32): object "a6" differs only in case from object "A6" in the same scope File: D:/ZC-CIE 239/project/UPTO9COUNT.sv Line: 32
+Info (10281): Verilog HDL Declaration information at UPTO5C.sv(2): object "a1" differs only in case from object "A1" in the same scope File: D:/ZC-CIE 239/project/UPTO5C.sv Line: 2
+Info (10281): Verilog HDL Declaration information at UPTO5C.sv(2): object "a2" differs only in case from object "A2" in the same scope File: D:/ZC-CIE 239/project/UPTO5C.sv Line: 2
+Info (10281): Verilog HDL Declaration information at UPTO5C.sv(2): object "a3" differs only in case from object "A3" in the same scope File: D:/ZC-CIE 239/project/UPTO5C.sv Line: 2
+Info (10281): Verilog HDL Declaration information at UPTO5C.sv(2): object "a4" differs only in case from object "A4" in the same scope File: D:/ZC-CIE 239/project/UPTO5C.sv Line: 2
+Info (10281): Verilog HDL Declaration information at UPTO5C.sv(15): object "a1" differs only in case from object "A1" in the same scope File: D:/ZC-CIE 239/project/UPTO5C.sv Line: 15
+Info (10281): Verilog HDL Declaration information at UPTO5C.sv(15): object "a2" differs only in case from object "A2" in the same scope File: D:/ZC-CIE 239/project/UPTO5C.sv Line: 15
+Info (10281): Verilog HDL Declaration information at UPTO5C.sv(15): object "a3" differs only in case from object "A3" in the same scope File: D:/ZC-CIE 239/project/UPTO5C.sv Line: 15
+Info (10281): Verilog HDL Declaration information at UPTO5C.sv(15): object "a4" differs only in case from object "A4" in the same scope File: D:/ZC-CIE 239/project/UPTO5C.sv Line: 15
+Info (10281): Verilog HDL Declaration information at UPTO5C.sv(15): object "a5" differs only in case from object "A5" in the same scope File: D:/ZC-CIE 239/project/UPTO5C.sv Line: 15
+Info (10281): Verilog HDL Declaration information at MAINFSM.sv(1): object "LOAD" differs only in case from object "load" in the same scope File: D:/ZC-CIE 239/project/MAINFSM.sv Line: 1
+Warning (10268): Verilog HDL information at MAINFSM.sv(150): always construct contains both blocking and non-blocking assignments File: D:/ZC-CIE 239/project/MAINFSM.sv Line: 150

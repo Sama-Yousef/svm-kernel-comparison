@@ -1,0 +1,658 @@
+# Reading pref.tcl
+# do STOPWATCH_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+D:/ZC-CIE\ 239/project {D:/ZC-CIE 239/project/UPTO9COUNT.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:28:39 on Jan 10,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/ZC-CIE 239/project" D:/ZC-CIE 239/project/UPTO9COUNT.sv 
+# -- Compiling module logicblockof9d1
+# -- Compiling module logicblockof9d2
+# -- Compiling module logicblockof9d3
+# -- Compiling module UPTO9C
+# 
+# Top level modules:
+# 	UPTO9C
+# End time: 17:28:39 on Jan 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/ZC-CIE\ 239/project {D:/ZC-CIE 239/project/UPTO5C.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:28:39 on Jan 10,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/ZC-CIE 239/project" D:/ZC-CIE 239/project/UPTO5C.sv 
+# -- Compiling module logicblockof5d1
+# -- Compiling module logicblockof5d2
+# -- Compiling module UPTO5C
+# 
+# Top level modules:
+# 	UPTO5C
+# End time: 17:28:40 on Jan 10,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/ZC-CIE\ 239/project {D:/ZC-CIE 239/project/ToDisplay.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:28:40 on Jan 10,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/ZC-CIE 239/project" D:/ZC-CIE 239/project/ToDisplay.sv 
+# -- Compiling module mux2x1
+# -- Compiling module Todisplay
+# 
+# Top level modules:
+# 	Todisplay
+# End time: 17:28:40 on Jan 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/ZC-CIE\ 239/project {D:/ZC-CIE 239/project/STOPWATCH.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:28:40 on Jan 10,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/ZC-CIE 239/project" D:/ZC-CIE 239/project/STOPWATCH.sv 
+# -- Compiling module STOPWATCH
+# 
+# Top level modules:
+# 	STOPWATCH
+# End time: 17:28:40 on Jan 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/ZC-CIE\ 239/project {D:/ZC-CIE 239/project/SerialLoad5.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:28:40 on Jan 10,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/ZC-CIE 239/project" D:/ZC-CIE 239/project/SerialLoad5.sv 
+# -- Compiling module serielload5
+# 
+# Top level modules:
+# 	serielload5
+# End time: 17:28:40 on Jan 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/ZC-CIE\ 239/project {D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:28:40 on Jan 10,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/ZC-CIE 239/project" D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv 
+# -- Compiling module MIN_SEC_COUNTER
+# 
+# Top level modules:
+# 	MIN_SEC_COUNTER
+# End time: 17:28:40 on Jan 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/ZC-CIE\ 239/project {D:/ZC-CIE 239/project/MAINFSM.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:28:40 on Jan 10,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/ZC-CIE 239/project" D:/ZC-CIE 239/project/MAINFSM.sv 
+# -- Compiling module MAINFSM
+# -- Compiling module clkdiv
+# 
+# Top level modules:
+# 	MAINFSM
+# 	clkdiv
+# End time: 17:28:40 on Jan 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/ZC-CIE\ 239/project {D:/ZC-CIE 239/project/GATTEDCLOCKS.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:28:40 on Jan 10,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/ZC-CIE 239/project" D:/ZC-CIE 239/project/GATTEDCLOCKS.sv 
+# -- Compiling module ANDGCLK
+# 
+# Top level modules:
+# 	ANDGCLK
+# End time: 17:28:40 on Jan 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/ZC-CIE\ 239/project {D:/ZC-CIE 239/project/Disp_hex_mux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:28:40 on Jan 10,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/ZC-CIE 239/project" D:/ZC-CIE 239/project/Disp_hex_mux.sv 
+# -- Compiling module disp_hex_mux
+# 
+# Top level modules:
+# 	disp_hex_mux
+# End time: 17:28:40 on Jan 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/ZC-CIE\ 239/project {D:/ZC-CIE 239/project/D_flip_flop.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:28:40 on Jan 10,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/ZC-CIE 239/project" D:/ZC-CIE 239/project/D_flip_flop.sv 
+# -- Compiling module d_ff
+# -- Compiling module d_ff1
+# 
+# Top level modules:
+# 	d_ff
+# End time: 17:28:40 on Jan 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.STOPWATCH
+# vsim work.STOPWATCH 
+# Start time: 17:28:52 on Jan 10,2022
+# Loading sv_std.std
+# Loading work.STOPWATCH
+# Loading work.clkdiv
+# Loading work.MAINFSM
+# Loading work.MIN_SEC_COUNTER
+# Loading work.ANDGCLK
+# Loading work.d_ff
+# Loading work.d_ff1
+# Loading work.UPTO9C
+# Loading work.logicblockof9d1
+# Loading work.logicblockof9d2
+# Loading work.logicblockof9d3
+# Loading work.UPTO5C
+# Loading work.logicblockof5d1
+# Loading work.logicblockof5d2
+# Loading work.serielload5
+# Loading work.mux2x1
+# Loading work.Todisplay
+# Loading work.disp_hex_mux
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DFF1'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/A1/DFF1 File: D:/ZC-CIE 239/project/GATTEDCLOCKS.sv Line: 3
+# ** Warning: (vsim-3722) D:/ZC-CIE 239/project/GATTEDCLOCKS.sv(3): [TFMPC] - Missing connection for port 'qbar'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/A1/DFF1/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'SEC_ONES'.  Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/SEC_ONES File: D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv Line: 8
+# ** Warning: (vsim-3722) D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv(8): [TFMPC] - Missing connection for port 'Qbar'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/SEC_ONES/d0/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/SEC_ONES/d1/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/SEC_ONES/d2/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/SEC_ONES/d3/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'd0'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/d0 File: D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv Line: 9
+# ** Warning: (vsim-3722) D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv(9): [TFMPC] - Missing connection for port 'qbar'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/d0/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'SEC_TENS'.  Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/SEC_TENS File: D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv Line: 12
+# ** Warning: (vsim-3722) D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv(12): [TFMPC] - Missing connection for port 'Qbar'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/SEC_TENS/d0/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/SEC_TENS/d1/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/SEC_TENS/d2/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'd1'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/d1 File: D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv Line: 13
+# ** Warning: (vsim-3722) D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv(13): [TFMPC] - Missing connection for port 'qbar'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/d1/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dl'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/dl File: D:/ZC-CIE 239/project/SerialLoad5.sv Line: 5
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'd'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/dl File: D:/ZC-CIE 239/project/SerialLoad5.sv Line: 5
+# ** Warning: (vsim-3722) D:/ZC-CIE 239/project/SerialLoad5.sv(5): [TFMPC] - Missing connection for port 'qbar'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/dl/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'd'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d0 File: D:/ZC-CIE 239/project/SerialLoad5.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d0/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d1/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d2/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d3/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d4/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d5/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d6/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d7/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d8/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d9/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d10/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'MIN_ONES'.  Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/MIN_ONES File: D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv Line: 19
+# ** Warning: (vsim-3722) D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv(19): [TFMPC] - Missing connection for port 'Qbar'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/MIN_ONES/d0/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/MIN_ONES/d1/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/MIN_ONES/d2/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/MIN_ONES/d3/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'd2'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/d2 File: D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv Line: 20
+# ** Warning: (vsim-3722) D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv(20): [TFMPC] - Missing connection for port 'qbar'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/d2/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'MIN_TENS'.  Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/MIN_TENS File: D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv Line: 22
+# ** Warning: (vsim-3722) D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv(22): [TFMPC] - Missing connection for port 'Qbar'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/MIN_TENS/d0/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/MIN_TENS/d1/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/MIN_TENS/d2/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+vsim work.STOPWATCH
+# End time: 17:28:57 on Jan 10,2022, Elapsed time: 0:00:05
+# Errors: 0, Warnings: 50
+# vsim work.STOPWATCH 
+# Start time: 17:28:57 on Jan 10,2022
+# Loading sv_std.std
+# Loading work.STOPWATCH
+# Loading work.clkdiv
+# Loading work.MAINFSM
+# Loading work.MIN_SEC_COUNTER
+# Loading work.ANDGCLK
+# Loading work.d_ff
+# Loading work.d_ff1
+# Loading work.UPTO9C
+# Loading work.logicblockof9d1
+# Loading work.logicblockof9d2
+# Loading work.logicblockof9d3
+# Loading work.UPTO5C
+# Loading work.logicblockof5d1
+# Loading work.logicblockof5d2
+# Loading work.serielload5
+# Loading work.mux2x1
+# Loading work.Todisplay
+# Loading work.disp_hex_mux
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DFF1'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/A1/DFF1 File: D:/ZC-CIE 239/project/GATTEDCLOCKS.sv Line: 3
+# ** Warning: (vsim-3722) D:/ZC-CIE 239/project/GATTEDCLOCKS.sv(3): [TFMPC] - Missing connection for port 'qbar'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/A1/DFF1/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'SEC_ONES'.  Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/SEC_ONES File: D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv Line: 8
+# ** Warning: (vsim-3722) D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv(8): [TFMPC] - Missing connection for port 'Qbar'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/SEC_ONES/d0/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/SEC_ONES/d1/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/SEC_ONES/d2/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/SEC_ONES/d3/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'd0'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/d0 File: D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv Line: 9
+# ** Warning: (vsim-3722) D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv(9): [TFMPC] - Missing connection for port 'qbar'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/d0/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'SEC_TENS'.  Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/SEC_TENS File: D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv Line: 12
+# ** Warning: (vsim-3722) D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv(12): [TFMPC] - Missing connection for port 'Qbar'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/SEC_TENS/d0/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/SEC_TENS/d1/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/SEC_TENS/d2/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'd1'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/d1 File: D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv Line: 13
+# ** Warning: (vsim-3722) D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv(13): [TFMPC] - Missing connection for port 'qbar'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/d1/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dl'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/dl File: D:/ZC-CIE 239/project/SerialLoad5.sv Line: 5
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'd'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/dl File: D:/ZC-CIE 239/project/SerialLoad5.sv Line: 5
+# ** Warning: (vsim-3722) D:/ZC-CIE 239/project/SerialLoad5.sv(5): [TFMPC] - Missing connection for port 'qbar'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/dl/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'd'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d0 File: D:/ZC-CIE 239/project/SerialLoad5.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d0/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d1/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d2/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d3/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d4/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d5/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d6/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d7/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d8/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d9/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d10/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'MIN_ONES'.  Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/MIN_ONES File: D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv Line: 19
+# ** Warning: (vsim-3722) D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv(19): [TFMPC] - Missing connection for port 'Qbar'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/MIN_ONES/d0/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/MIN_ONES/d1/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/MIN_ONES/d2/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/MIN_ONES/d3/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'd2'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/d2 File: D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv Line: 20
+# ** Warning: (vsim-3722) D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv(20): [TFMPC] - Missing connection for port 'qbar'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/d2/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'MIN_TENS'.  Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/MIN_TENS File: D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv Line: 22
+# ** Warning: (vsim-3722) D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv(22): [TFMPC] - Missing connection for port 'Qbar'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/MIN_TENS/d0/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/MIN_TENS/d1/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/MIN_TENS/d2/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+add wave -position insertpoint  \
+sim:/STOPWATCH/STRT_COUNTER \
+sim:/STOPWATCH/RESETFORERROR \
+sim:/STOPWATCH/RESET \
+sim:/STOPWATCH/MODE_COUNTER \
+sim:/STOPWATCH/MERROR3 \
+sim:/STOPWATCH/MERROR2 \
+sim:/STOPWATCH/MERROR1 \
+sim:/STOPWATCH/MERROR0 \
+sim:/STOPWATCH/MCOUNT3 \
+sim:/STOPWATCH/MCOUNT2 \
+sim:/STOPWATCH/MCOUNT1 \
+sim:/STOPWATCH/MCOUNT0 \
+sim:/STOPWATCH/MAINSVNSG3 \
+sim:/STOPWATCH/MAINSVNSG2 \
+sim:/STOPWATCH/MAINSVNSG1 \
+sim:/STOPWATCH/MAINSVNSG0 \
+sim:/STOPWATCH/MAINPUSHR \
+sim:/STOPWATCH/MAINPUSHL \
+sim:/STOPWATCH/MAINDIP2M \
+sim:/STOPWATCH/MAINDIP1S \
+sim:/STOPWATCH/MAINCLOCK \
+sim:/STOPWATCH/LOAD_COUNTER \
+sim:/STOPWATCH/IS_THERE_ERROR \
+sim:/STOPWATCH/ENABLE7SEG \
+sim:/STOPWATCH/DIGIT7SEG \
+sim:/STOPWATCH/CLOCK1sec
+force -freeze sim:/STOPWATCH/MAINPUSHR 1 0
+force -freeze sim:/STOPWATCH/MAINPUSHL 0 0
+force -freeze sim:/STOPWATCH/MAINDIP2M 0 0
+force -freeze sim:/STOPWATCH/MAINDIP1S 0 0
+force -freeze sim:/STOPWATCH/MAINCLOCK 1 0, 0 {2 ps} -r 20
+run
+run
+vsim work.clkdiv
+# End time: 17:31:00 on Jan 10,2022, Elapsed time: 0:02:03
+# Errors: 0, Warnings: 50
+# vsim work.clkdiv 
+# Start time: 17:31:00 on Jan 10,2022
+# Loading sv_std.std
+# Loading work.clkdiv
+add wave -position insertpoint  \
+sim:/clkdiv/clock_in
+add wave -position insertpoint  \
+sim:/clkdiv/reset
+add wave -position insertpoint  \
+sim:/clkdiv/clock_out
+force -freeze sim:/clkdiv/clock_in 1 0
+force -freeze sim:/clkdiv/reset 1 0
+force -freeze sim:/clkdiv/clock_in 1 0, 0 {0 ps} -r 10
+run
+noforce sim:/clkdiv/clock_in
+force -freeze sim:/clkdiv/clock_in 1 0, 0 {8 ps} -r 40
+run
+run
+run
+run
+force -freeze sim:/clkdiv/reset 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vsim work.STOPWATCH
+# End time: 17:32:57 on Jan 10,2022, Elapsed time: 0:01:57
+# Errors: 0, Warnings: 0
+# vsim work.STOPWATCH 
+# Start time: 17:32:57 on Jan 10,2022
+# Loading sv_std.std
+# Loading work.STOPWATCH
+# Loading work.clkdiv
+# Loading work.MAINFSM
+# Loading work.MIN_SEC_COUNTER
+# Loading work.ANDGCLK
+# Loading work.d_ff
+# Loading work.d_ff1
+# Loading work.UPTO9C
+# Loading work.logicblockof9d1
+# Loading work.logicblockof9d2
+# Loading work.logicblockof9d3
+# Loading work.UPTO5C
+# Loading work.logicblockof5d1
+# Loading work.logicblockof5d2
+# Loading work.serielload5
+# Loading work.mux2x1
+# Loading work.Todisplay
+# Loading work.disp_hex_mux
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DFF1'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/A1/DFF1 File: D:/ZC-CIE 239/project/GATTEDCLOCKS.sv Line: 3
+# ** Warning: (vsim-3722) D:/ZC-CIE 239/project/GATTEDCLOCKS.sv(3): [TFMPC] - Missing connection for port 'qbar'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/A1/DFF1/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'SEC_ONES'.  Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/SEC_ONES File: D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv Line: 8
+# ** Warning: (vsim-3722) D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv(8): [TFMPC] - Missing connection for port 'Qbar'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/SEC_ONES/d0/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/SEC_ONES/d1/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/SEC_ONES/d2/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/SEC_ONES/d3/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'd0'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/d0 File: D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv Line: 9
+# ** Warning: (vsim-3722) D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv(9): [TFMPC] - Missing connection for port 'qbar'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/d0/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'SEC_TENS'.  Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/SEC_TENS File: D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv Line: 12
+# ** Warning: (vsim-3722) D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv(12): [TFMPC] - Missing connection for port 'Qbar'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/SEC_TENS/d0/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/SEC_TENS/d1/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/SEC_TENS/d2/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'd1'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/d1 File: D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv Line: 13
+# ** Warning: (vsim-3722) D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv(13): [TFMPC] - Missing connection for port 'qbar'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/d1/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dl'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/dl File: D:/ZC-CIE 239/project/SerialLoad5.sv Line: 5
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'd'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/dl File: D:/ZC-CIE 239/project/SerialLoad5.sv Line: 5
+# ** Warning: (vsim-3722) D:/ZC-CIE 239/project/SerialLoad5.sv(5): [TFMPC] - Missing connection for port 'qbar'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/dl/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'd'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d0 File: D:/ZC-CIE 239/project/SerialLoad5.sv Line: 18
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d0/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d1/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d2/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d3/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d4/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d5/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d6/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d7/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d8/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d9/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/load5min/d10/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'MIN_ONES'.  Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/MIN_ONES File: D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv Line: 19
+# ** Warning: (vsim-3722) D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv(19): [TFMPC] - Missing connection for port 'Qbar'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/MIN_ONES/d0/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/MIN_ONES/d1/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/MIN_ONES/d2/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/MIN_ONES/d3/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'd2'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/d2 File: D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv Line: 20
+# ** Warning: (vsim-3722) D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv(20): [TFMPC] - Missing connection for port 'qbar'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/d2/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'MIN_TENS'.  Expected 6, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/MIN_TENS File: D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv Line: 22
+# ** Warning: (vsim-3722) D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv(22): [TFMPC] - Missing connection for port 'Qbar'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/MIN_TENS/d0/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/MIN_TENS/d1/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'set'. The port definition is at: D:/ZC-CIE 239/project/D_flip_flop.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /STOPWATCH/MYCLKCOUNT/MIN_TENS/d2/mydff File: D:/ZC-CIE 239/project/D_flip_flop.sv Line: 8
+add wave -position insertpoint  \
+sim:/STOPWATCH/STRT_COUNTER \
+sim:/STOPWATCH/RESETFORERROR \
+sim:/STOPWATCH/RESET \
+sim:/STOPWATCH/MODE_COUNTER \
+sim:/STOPWATCH/MERROR3 \
+sim:/STOPWATCH/MERROR2 \
+sim:/STOPWATCH/MERROR1 \
+sim:/STOPWATCH/MERROR0 \
+sim:/STOPWATCH/MCOUNT3 \
+sim:/STOPWATCH/MCOUNT2 \
+sim:/STOPWATCH/MCOUNT1 \
+sim:/STOPWATCH/MCOUNT0 \
+sim:/STOPWATCH/MAINSVNSG3 \
+sim:/STOPWATCH/MAINSVNSG2 \
+sim:/STOPWATCH/MAINSVNSG1 \
+sim:/STOPWATCH/MAINSVNSG0 \
+sim:/STOPWATCH/MAINPUSHR \
+sim:/STOPWATCH/MAINPUSHL \
+sim:/STOPWATCH/MAINDIP2M \
+sim:/STOPWATCH/MAINDIP1S \
+sim:/STOPWATCH/MAINCLOCK \
+sim:/STOPWATCH/LOAD_COUNTER \
+sim:/STOPWATCH/IS_THERE_ERROR \
+sim:/STOPWATCH/ENABLE7SEG \
+sim:/STOPWATCH/DIGIT7SEG \
+sim:/STOPWATCH/CLOCK1sec
+force -freeze sim:/STOPWATCH/MAINPUSHR 1 0
+force -freeze sim:/STOPWATCH/MAINPUSHL 0 0
+force -freeze sim:/STOPWATCH/MAINDIP2M 0 0
+force -freeze sim:/STOPWATCH/MAINDIP1S 0 0
+force -freeze sim:/STOPWATCH/MAINCLOCK 1 0, 0 {2 ps} -r 20
+run
+force -freeze sim:/STOPWATCH/MAINPUSHR St0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/STOPWATCH/MAINDIP1S St1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/STOPWATCH/MAINDIP2M St1 0
+run
+run
+run
+run
+run
+run
+# End time: 17:36:14 on Jan 10,2022, Elapsed time: 0:03:17
+# Errors: 0, Warnings: 50

@@ -1,0 +1,486 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/ZC-CIE 239/project/simulation/modelsim
+vANDGCLK
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1641828520
+!i10b 1
+!s100 hX]JU`9`bRo]hoD1Mm49H2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ImY:8HBC_QEk:D<VYDX6IW1
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1641828426
+8D:/ZC-CIE 239/project/GATTEDCLOCKS.sv
+FD:/ZC-CIE 239/project/GATTEDCLOCKS.sv
+!i122 7
+L0 1 5
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1641828520.000000
+!s107 D:/ZC-CIE 239/project/GATTEDCLOCKS.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ZC-CIE 239/project|D:/ZC-CIE 239/project/GATTEDCLOCKS.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work {+incdir+D:/ZC-CIE 239/project}
+Z9 tCvgOpt 0
+n@a@n@d@g@c@l@k
+vclkdiv
+R1
+R2
+!i10b 1
+!s100 zYl=7nME2UYKPkJjNO94M2
+R3
+IF]b3kU<_3IbZLY_?W2k]d0
+R4
+S1
+R0
+Z10 w1641759122
+Z11 8D:/ZC-CIE 239/project/MAINFSM.sv
+Z12 FD:/ZC-CIE 239/project/MAINFSM.sv
+!i122 6
+L0 138 24
+R5
+r1
+!s85 0
+31
+R6
+Z13 !s107 D:/ZC-CIE 239/project/MAINFSM.sv|
+Z14 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ZC-CIE 239/project|D:/ZC-CIE 239/project/MAINFSM.sv|
+!i113 1
+R7
+R8
+R9
+vd_ff
+R1
+R2
+!i10b 1
+!s100 DcBgofJMn@Wfk22_Jh?5;3
+R3
+Iahc8n3E_DNKoD;SMh_eNE0
+R4
+S1
+R0
+Z15 w1641490991
+Z16 8D:/ZC-CIE 239/project/D_flip_flop.sv
+Z17 FD:/ZC-CIE 239/project/D_flip_flop.sv
+!i122 9
+L0 2 8
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/ZC-CIE 239/project/D_flip_flop.sv|
+Z18 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ZC-CIE 239/project|D:/ZC-CIE 239/project/D_flip_flop.sv|
+!i113 1
+R7
+R8
+R9
+vd_ff1
+R1
+R2
+!i10b 1
+!s100 _Ub4TmO2j:8??NG;28:zX2
+R3
+ID>Aj]Lhz5J;dDT[^ZO:HZ1
+R4
+S1
+R0
+R15
+R16
+R17
+!i122 9
+L0 11 13
+R5
+r1
+!s85 0
+31
+R6
+Z19 !s107 D:/ZC-CIE 239/project/D_flip_flop.sv|
+R18
+!i113 1
+R7
+R8
+R9
+vdisp_hex_mux
+R1
+R2
+!i10b 1
+!s100 nThX[aXDh6EQ[F4dE]RgJ0
+R3
+In87?637U=Od]3P?^W9@8<0
+R4
+S1
+R0
+w1641759119
+8D:/ZC-CIE 239/project/Disp_hex_mux.sv
+FD:/ZC-CIE 239/project/Disp_hex_mux.sv
+!i122 8
+L0 1 79
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/ZC-CIE 239/project/Disp_hex_mux.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ZC-CIE 239/project|D:/ZC-CIE 239/project/Disp_hex_mux.sv|
+!i113 1
+R7
+R8
+R9
+vlogicblockof5d1
+R1
+R2
+!i10b 1
+!s100 dMYbOiOGnjmg[B2ZIGZj61
+R3
+INB>Ee0Fd5kD6NB:JL4NQM3
+R4
+S1
+R0
+Z20 w1641490383
+Z21 8D:/ZC-CIE 239/project/UPTO5C.sv
+Z22 FD:/ZC-CIE 239/project/UPTO5C.sv
+!i122 1
+L0 1 12
+R5
+r1
+!s85 0
+31
+Z23 !s108 1641828519.000000
+Z24 !s107 D:/ZC-CIE 239/project/UPTO5C.sv|
+Z25 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ZC-CIE 239/project|D:/ZC-CIE 239/project/UPTO5C.sv|
+!i113 1
+R7
+R8
+R9
+vlogicblockof5d2
+R1
+R2
+!i10b 1
+!s100 JGFQ<7iJNzI5]Vdj3LBCT2
+R3
+IkQH0i2JIYnSeSc;7?^MS@3
+R4
+S1
+R0
+R20
+R21
+R22
+!i122 1
+L0 14 13
+R5
+r1
+!s85 0
+31
+R23
+R24
+R25
+!i113 1
+R7
+R8
+R9
+vlogicblockof9d1
+R1
+Z26 !s110 1641828519
+!i10b 1
+!s100 RCKd=F7?QcfaE1M]Ni??m1
+R3
+I53oILYCKYb?lbV[i^V40o3
+R4
+S1
+R0
+Z27 w1641480213
+Z28 8D:/ZC-CIE 239/project/UPTO9COUNT.sv
+Z29 FD:/ZC-CIE 239/project/UPTO9COUNT.sv
+!i122 0
+L0 1 14
+R5
+r1
+!s85 0
+31
+R23
+Z30 !s107 D:/ZC-CIE 239/project/UPTO9COUNT.sv|
+Z31 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ZC-CIE 239/project|D:/ZC-CIE 239/project/UPTO9COUNT.sv|
+!i113 1
+R7
+R8
+R9
+vlogicblockof9d2
+R1
+R26
+!i10b 1
+!s100 [2J5^9ne``M^GAR;A@WNO1
+R3
+Il6P0`Q@ioPeaCZ][XKD8o2
+R4
+S1
+R0
+R27
+R28
+R29
+!i122 0
+L0 16 14
+R5
+r1
+!s85 0
+31
+R23
+R30
+R31
+!i113 1
+R7
+R8
+R9
+vlogicblockof9d3
+R1
+R26
+!i10b 1
+!s100 3EN23i[m:S4dXaO:e6bBS0
+R3
+In?CzEcGlMEKO@_nVbQOjf1
+R4
+S1
+R0
+R27
+R28
+R29
+!i122 0
+L0 31 15
+R5
+r1
+!s85 0
+31
+R23
+R30
+R31
+!i113 1
+R7
+R8
+R9
+vMAINFSM
+R1
+R2
+!i10b 1
+!s100 e5ROPN1=Q7T[AK`le[ACa1
+R3
+IUG4hAh:>gkndT_i?SCz^22
+R4
+S1
+R0
+R10
+R11
+R12
+!i122 6
+L0 1 136
+R5
+r1
+!s85 0
+31
+R6
+R13
+R14
+!i113 1
+R7
+R8
+R9
+n@m@a@i@n@f@s@m
+vMIN_SEC_COUNTER
+R1
+R2
+!i10b 1
+!s100 U@7aV?<n]<oPU@lRLVbbH1
+R3
+Ih?]9K8I:EHOc2jh5:D^@A2
+R4
+S1
+R0
+w1641828424
+8D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv
+FD:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv
+!i122 5
+L0 1 23
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ZC-CIE 239/project|D:/ZC-CIE 239/project/MIN_SEC_COUNTER.sv|
+!i113 1
+R7
+R8
+R9
+n@m@i@n_@s@e@c_@c@o@u@n@t@e@r
+vmux2x1
+R1
+R2
+!i10b 1
+!s100 o=8ed`agbZW^;FTNIPaHN3
+R3
+I7hm;Hz_=g8Wc22Jzf_g?i3
+R4
+S1
+R0
+Z32 w1641483906
+Z33 8D:/ZC-CIE 239/project/ToDisplay.sv
+Z34 FD:/ZC-CIE 239/project/ToDisplay.sv
+!i122 2
+L0 2 7
+R5
+r1
+!s85 0
+31
+R6
+Z35 !s107 D:/ZC-CIE 239/project/ToDisplay.sv|
+Z36 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ZC-CIE 239/project|D:/ZC-CIE 239/project/ToDisplay.sv|
+!i113 1
+R7
+R8
+R9
+vserielload5
+R1
+R2
+!i10b 1
+!s100 jh4[Ng=c9ZWla3Dg50dXQ1
+R3
+IRJT_:36kcQ9H@E=oD[nBl0
+R4
+S1
+R0
+w1641828455
+8D:/ZC-CIE 239/project/SerialLoad5.sv
+FD:/ZC-CIE 239/project/SerialLoad5.sv
+!i122 4
+L0 1 29
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/ZC-CIE 239/project/SerialLoad5.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ZC-CIE 239/project|D:/ZC-CIE 239/project/SerialLoad5.sv|
+!i113 1
+R7
+R8
+R9
+vSTOPWATCH
+R1
+R2
+!i10b 1
+!s100 63LnQzO@5[3ZnAj]kWAKg3
+R3
+I;j6AEof@8cBlcLEg7_@1i2
+R4
+S1
+R0
+w1641828423
+8D:/ZC-CIE 239/project/STOPWATCH.sv
+FD:/ZC-CIE 239/project/STOPWATCH.sv
+!i122 3
+L0 1 19
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/ZC-CIE 239/project/STOPWATCH.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/ZC-CIE 239/project|D:/ZC-CIE 239/project/STOPWATCH.sv|
+!i113 1
+R7
+R8
+R9
+n@s@t@o@p@w@a@t@c@h
+vTodisplay
+R1
+R2
+!i10b 1
+!s100 7_2zSaObU7L9SHTP]kA:c2
+R3
+IVLXkIaRN^Fj6Lok@eENjm3
+R4
+S1
+R0
+R32
+R33
+R34
+!i122 2
+L0 10 25
+R5
+r1
+!s85 0
+31
+R6
+R35
+R36
+!i113 1
+R7
+R8
+R9
+n@todisplay
+vUPTO5C
+R1
+R2
+!i10b 1
+!s100 1L0TM7SIH8f>^aYCNS>@U1
+R3
+I8S:Xe52_UkUB13MBDC`bV1
+R4
+S1
+R0
+R20
+R21
+R22
+!i122 1
+L0 28 13
+R5
+r1
+!s85 0
+31
+R23
+R24
+R25
+!i113 1
+R7
+R8
+R9
+n@u@p@t@o5@c
+vUPTO9C
+R1
+R26
+!i10b 1
+!s100 jGaeCz:Li61HEck[<R[>z3
+R3
+IY_Nl83[QZHRD51a4l`]iN3
+R4
+S1
+R0
+R27
+R28
+R29
+!i122 0
+L0 47 13
+R5
+r1
+!s85 0
+31
+R23
+R30
+R31
+!i113 1
+R7
+R8
+R9
+n@u@p@t@o9@c

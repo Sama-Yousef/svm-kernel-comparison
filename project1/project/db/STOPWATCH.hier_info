@@ -1,0 +1,1484 @@
+|STOPWATCH
+MAINCLOCK => MAINCLOCK.IN3
+MAINPUSHR => MAINPUSHR.IN3
+MAINPUSHL => MAINPUSHL.IN1
+MAINDIP1S => MAINDIP1S.IN1
+MAINDIP2M => MAINDIP2M.IN1
+DIGIT7SEG[0] << disp_hex_mux:finaldisplay.port8
+DIGIT7SEG[1] << disp_hex_mux:finaldisplay.port8
+DIGIT7SEG[2] << disp_hex_mux:finaldisplay.port8
+DIGIT7SEG[3] << disp_hex_mux:finaldisplay.port8
+DIGIT7SEG[4] << disp_hex_mux:finaldisplay.port8
+DIGIT7SEG[5] << disp_hex_mux:finaldisplay.port8
+DIGIT7SEG[6] << disp_hex_mux:finaldisplay.port8
+DIGIT7SEG[7] << disp_hex_mux:finaldisplay.port8
+ENABLE7SEG[0] << disp_hex_mux:finaldisplay.port7
+ENABLE7SEG[1] << disp_hex_mux:finaldisplay.port7
+ENABLE7SEG[2] << disp_hex_mux:finaldisplay.port7
+ENABLE7SEG[3] << disp_hex_mux:finaldisplay.port7
+MAINSVNSG0[0] << MAINSVNSG0[0].DB_MAX_OUTPUT_PORT_TYPE
+MAINSVNSG0[1] << MAINSVNSG0[1].DB_MAX_OUTPUT_PORT_TYPE
+MAINSVNSG0[2] << MAINSVNSG0[2].DB_MAX_OUTPUT_PORT_TYPE
+MAINSVNSG0[3] << MAINSVNSG0[3].DB_MAX_OUTPUT_PORT_TYPE
+MAINSVNSG1[0] << MAINSVNSG1[0].DB_MAX_OUTPUT_PORT_TYPE
+MAINSVNSG1[1] << MAINSVNSG1[1].DB_MAX_OUTPUT_PORT_TYPE
+MAINSVNSG1[2] << MAINSVNSG1[2].DB_MAX_OUTPUT_PORT_TYPE
+MAINSVNSG1[3] << MAINSVNSG1[3].DB_MAX_OUTPUT_PORT_TYPE
+MAINSVNSG2[0] << MAINSVNSG2[0].DB_MAX_OUTPUT_PORT_TYPE
+MAINSVNSG2[1] << MAINSVNSG2[1].DB_MAX_OUTPUT_PORT_TYPE
+MAINSVNSG2[2] << MAINSVNSG2[2].DB_MAX_OUTPUT_PORT_TYPE
+MAINSVNSG2[3] << MAINSVNSG2[3].DB_MAX_OUTPUT_PORT_TYPE
+MAINSVNSG3[0] << MAINSVNSG3[0].DB_MAX_OUTPUT_PORT_TYPE
+MAINSVNSG3[1] << MAINSVNSG3[1].DB_MAX_OUTPUT_PORT_TYPE
+MAINSVNSG3[2] << MAINSVNSG3[2].DB_MAX_OUTPUT_PORT_TYPE
+MAINSVNSG3[3] << MAINSVNSG3[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|clkdiv:CLOCKTO1SEC
+reset => counter[0].ACLR
+reset => counter[1].ACLR
+reset => counter[2].ACLR
+reset => counter[3].ACLR
+reset => counter[4].ACLR
+reset => counter[5].ACLR
+reset => counter[6].ACLR
+reset => counter[7].ACLR
+reset => counter[8].ACLR
+reset => counter[9].ACLR
+reset => counter[10].ACLR
+reset => counter[11].ACLR
+reset => counter[12].ACLR
+reset => counter[13].ACLR
+reset => counter[14].ACLR
+reset => counter[15].ACLR
+reset => counter[16].ACLR
+reset => counter[17].ACLR
+reset => counter[18].ACLR
+reset => counter[19].ACLR
+reset => counter[20].ACLR
+reset => counter[21].ACLR
+reset => counter[22].ACLR
+reset => counter[23].ACLR
+reset => counter[24].ACLR
+reset => counter[25].ACLR
+reset => counter[26].ACLR
+reset => counter[27].ACLR
+reset => clock_out~reg0.ENA
+clock_in => clock_out~reg0.CLK
+clock_in => counter[0].CLK
+clock_in => counter[1].CLK
+clock_in => counter[2].CLK
+clock_in => counter[3].CLK
+clock_in => counter[4].CLK
+clock_in => counter[5].CLK
+clock_in => counter[6].CLK
+clock_in => counter[7].CLK
+clock_in => counter[8].CLK
+clock_in => counter[9].CLK
+clock_in => counter[10].CLK
+clock_in => counter[11].CLK
+clock_in => counter[12].CLK
+clock_in => counter[13].CLK
+clock_in => counter[14].CLK
+clock_in => counter[15].CLK
+clock_in => counter[16].CLK
+clock_in => counter[17].CLK
+clock_in => counter[18].CLK
+clock_in => counter[19].CLK
+clock_in => counter[20].CLK
+clock_in => counter[21].CLK
+clock_in => counter[22].CLK
+clock_in => counter[23].CLK
+clock_in => counter[24].CLK
+clock_in => counter[25].CLK
+clock_in => counter[26].CLK
+clock_in => counter[27].CLK
+clock_out <= clock_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MAINFSM:MYFSM
+clk => state_current[0].CLK
+clk => state_current[1].CLK
+clk => state_current[2].CLK
+clk => state_current[3].CLK
+clk => state_current[4].CLK
+clk => state_current[5].CLK
+clk => state_current[6].CLK
+clk => state_current[7].CLK
+clk => state_current[8].CLK
+clk => state_current[9].CLK
+clk => state_current[10].CLK
+clk => state_current[11].CLK
+clk => state_current[12].CLK
+clk => state_current[13].CLK
+clk => state_current[14].CLK
+clk => state_current[15].CLK
+clk => state_current[16].CLK
+clk => state_current[17].CLK
+clk => state_current[18].CLK
+clk => state_current[19].CLK
+clk => state_current[20].CLK
+clk => state_current[21].CLK
+clk => state_current[22].CLK
+clk => state_current[23].CLK
+clk => state_current[24].CLK
+clk => state_current[25].CLK
+clk => state_current[26].CLK
+clk => state_current[27].CLK
+clk => state_current[28].CLK
+clk => state_current[29].CLK
+clk => state_current[30].CLK
+clk => state_current[31].CLK
+reset => state_current[0].ACLR
+reset => state_current[1].ACLR
+reset => state_current[2].ACLR
+reset => state_current[3].ACLR
+reset => state_current[4].ACLR
+reset => state_current[5].ACLR
+reset => state_current[6].ACLR
+reset => state_current[7].ACLR
+reset => state_current[8].ACLR
+reset => state_current[9].ACLR
+reset => state_current[10].ACLR
+reset => state_current[11].ACLR
+reset => state_current[12].ACLR
+reset => state_current[13].ACLR
+reset => state_current[14].ACLR
+reset => state_current[15].ACLR
+reset => state_current[16].ACLR
+reset => state_current[17].ACLR
+reset => state_current[18].ACLR
+reset => state_current[19].ACLR
+reset => state_current[20].ACLR
+reset => state_current[21].ACLR
+reset => state_current[22].ACLR
+reset => state_current[23].ACLR
+reset => state_current[24].ACLR
+reset => state_current[25].ACLR
+reset => state_current[26].ACLR
+reset => state_current[27].ACLR
+reset => state_current[28].ACLR
+reset => state_current[29].ACLR
+reset => state_current[30].ACLR
+reset => state_current[31].ACLR
+S => state_next.DATAA
+S => state_next.OUTPUTSELECT
+S => Selector1.IN9
+S => state_next.OUTPUTSELECT
+S => state_next.OUTPUTSELECT
+S => state_next.OUTPUTSELECT
+S => state_next.OUTPUTSELECT
+S => state_next.OUTPUTSELECT
+S => state_next.OUTPUTSELECT
+M => state_next.OUTPUTSELECT
+M => state_next.OUTPUTSELECT
+M => state_next.OUTPUTSELECT
+M => state_next.DATAB
+M => state_next.DATAA
+M => state_next.OUTPUTSELECT
+M => state_next.OUTPUTSELECT
+L => state_next.OUTPUTSELECT
+L => state_next.OUTPUTSELECT
+L => state_next.DATAA
+L => state_next.DATAA
+L => state_next.DATAA
+L => state_next.DATAA
+L => state_next.DATAA
+RSTN <= RSTN.DB_MAX_OUTPUT_PORT_TYPE
+MODE <= Equal3.DB_MAX_OUTPUT_PORT_TYPE
+LOAD <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+STRT <= STRT.DB_MAX_OUTPUT_PORT_TYPE
+EROR <= RSTN.DB_MAX_OUTPUT_PORT_TYPE
+ERR0[3] <= Equal4.DB_MAX_OUTPUT_PORT_TYPE
+ERR0[2] <= Equal5.DB_MAX_OUTPUT_PORT_TYPE
+ERR0[1] <= <GND>
+ERR0[0] <= <GND>
+ERR1[3] <= <GND>
+ERR1[2] <= <GND>
+ERR1[1] <= <GND>
+ERR1[0] <= <GND>
+ERR2[3] <= <GND>
+ERR2[2] <= <GND>
+ERR2[1] <= RSTN.DB_MAX_OUTPUT_PORT_TYPE
+ERR2[0] <= RSTN.DB_MAX_OUTPUT_PORT_TYPE
+ERR3[3] <= <GND>
+ERR3[2] <= RSTN.DB_MAX_OUTPUT_PORT_TYPE
+ERR3[1] <= RSTN.DB_MAX_OUTPUT_PORT_TYPE
+ERR3[0] <= RSTN.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT
+MODE => MODE.IN4
+START => START.IN1
+CLOCK => CLOCK.IN1
+clk1s => clk1s.IN1
+RST => RST.IN9
+LOAD => LOAD.IN1
+HEX3[0] <= UPTO5C:MIN_TENS.port4
+HEX3[1] <= UPTO5C:MIN_TENS.port4
+HEX3[2] <= UPTO5C:MIN_TENS.port4
+HEX3[3] <= UPTO5C:MIN_TENS.port4
+HEX2[0] <= UPTO9C:MIN_ONES.port4
+HEX2[1] <= UPTO9C:MIN_ONES.port4
+HEX2[2] <= UPTO9C:MIN_ONES.port4
+HEX2[3] <= UPTO9C:MIN_ONES.port4
+HEX1[0] <= UPTO5C:SEC_TENS.port4
+HEX1[1] <= UPTO5C:SEC_TENS.port4
+HEX1[2] <= UPTO5C:SEC_TENS.port4
+HEX1[3] <= UPTO5C:SEC_TENS.port4
+HEX0[0] <= UPTO9C:SEC_ONES.port4
+HEX0[1] <= UPTO9C:SEC_ONES.port4
+HEX0[2] <= UPTO9C:SEC_ONES.port4
+HEX0[3] <= UPTO9C:SEC_ONES.port4
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|ANDGCLK:A1
+gclk <= A1.DB_MAX_OUTPUT_PORT_TYPE
+R => R.IN1
+en => en.IN1
+clk => A1.IN1
+clk => _.IN1
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|ANDGCLK:A1|d_ff:DFF1
+d => d.IN1
+rstn => rstn.IN1
+clk => clk.IN1
+q <= d_ff1:mydff.port4
+qbar <= d_ff1:mydff.port5
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|ANDGCLK:A1|d_ff:DFF1|d_ff1:mydff
+d => n4.IN1
+set => n1.IN0
+set => n5.IN1
+clk => n2.IN1
+clk => n3.IN0
+rest => n2.IN2
+rest => n4.IN2
+rest => n6.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= n6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES
+R => R.IN4
+M => M.IN3
+clk => clk.IN4
+cout <= n1.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[0] <= Q[0].DB_MAX_OUTPUT_PORT_TYPE
+Qbar[3] <= d_ff:d3.port4
+Qbar[2] <= d_ff:d2.port4
+Qbar[1] <= d_ff:d1.port4
+Qbar[0] <= Qbar[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES|logicblockof9d1:LB1
+M => A3.IN0
+M => A4.IN0
+M => A5.IN0
+M => A1.IN0
+M => A2.IN0
+Q0 => A1.IN1
+Q0 => A3.IN1
+Q0 => A2.IN1
+Q0 => A4.IN1
+Q0 => A5.IN1
+Q1 => A2.IN2
+Q1 => A3.IN2
+Q1 => A1.IN2
+Q1 => A4.IN2
+Q1 => A5.IN2
+Q2 => A4.IN3
+Q2 => A5.IN3
+Q3 => A5.IN4
+Q3 => A1.IN3
+Q3 => A2.IN3
+Q3 => A3.IN3
+Q3 => A4.IN4
+x <= o1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES|logicblockof9d2:LB2
+M => A3.IN0
+M => A5.IN0
+M => A1.IN0
+M => A4.IN0
+Q0 => A3.IN1
+Q0 => A4.IN1
+Q0 => A2.IN0
+Q0 => A5.IN1
+Q1 => A2.IN1
+Q1 => A4.IN2
+Q1 => A1.IN1
+Q1 => A5.IN2
+Q2 => A1.IN2
+Q2 => A2.IN2
+Q2 => A3.IN2
+Q2 => A4.IN3
+Q2 => A5.IN3
+Q3 => A5.IN4
+Q3 => A1.IN3
+Q3 => A2.IN3
+Q3 => A3.IN3
+Q3 => A4.IN4
+x <= o1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES|logicblockof9d3:LB3
+M => A1.IN0
+M => A2.IN0
+M => A3.IN0
+M => A6.IN0
+M => A4.IN0
+M => A5.IN0
+Q0 => A1.IN1
+Q0 => A4.IN1
+Q0 => A5.IN1
+Q0 => A6.IN1
+Q1 => A2.IN1
+Q1 => A4.IN2
+Q1 => A5.IN2
+Q1 => A6.IN2
+Q2 => A3.IN1
+Q2 => A4.IN3
+Q2 => A5.IN3
+Q2 => A6.IN3
+Q3 => A1.IN2
+Q3 => A2.IN2
+Q3 => A3.IN2
+Q3 => A5.IN4
+Q3 => A4.IN4
+Q3 => A6.IN4
+x <= o1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES|d_ff:d0
+d => d.IN1
+rstn => rstn.IN1
+clk => clk.IN1
+q <= d_ff1:mydff.port4
+qbar <= d_ff1:mydff.port5
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES|d_ff:d0|d_ff1:mydff
+d => n4.IN1
+set => n1.IN0
+set => n5.IN1
+clk => n2.IN1
+clk => n3.IN0
+rest => n2.IN2
+rest => n4.IN2
+rest => n6.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= n6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES|d_ff:d1
+d => d.IN1
+rstn => rstn.IN1
+clk => clk.IN1
+q <= d_ff1:mydff.port4
+qbar <= d_ff1:mydff.port5
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES|d_ff:d1|d_ff1:mydff
+d => n4.IN1
+set => n1.IN0
+set => n5.IN1
+clk => n2.IN1
+clk => n3.IN0
+rest => n2.IN2
+rest => n4.IN2
+rest => n6.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= n6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES|d_ff:d2
+d => d.IN1
+rstn => rstn.IN1
+clk => clk.IN1
+q <= d_ff1:mydff.port4
+qbar <= d_ff1:mydff.port5
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES|d_ff:d2|d_ff1:mydff
+d => n4.IN1
+set => n1.IN0
+set => n5.IN1
+clk => n2.IN1
+clk => n3.IN0
+rest => n2.IN2
+rest => n4.IN2
+rest => n6.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= n6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES|d_ff:d3
+d => d.IN1
+rstn => rstn.IN1
+clk => clk.IN1
+q <= d_ff1:mydff.port4
+qbar <= d_ff1:mydff.port5
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:SEC_ONES|d_ff:d3|d_ff1:mydff
+d => n4.IN1
+set => n1.IN0
+set => n5.IN1
+clk => n2.IN1
+clk => n3.IN0
+rest => n2.IN2
+rest => n4.IN2
+rest => n6.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= n6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|d_ff:d0
+d => d.IN1
+rstn => rstn.IN1
+clk => clk.IN1
+q <= d_ff1:mydff.port4
+qbar <= d_ff1:mydff.port5
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|d_ff:d0|d_ff1:mydff
+d => n4.IN1
+set => n1.IN0
+set => n5.IN1
+clk => n2.IN1
+clk => n3.IN0
+rest => n2.IN2
+rest => n4.IN2
+rest => n6.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= n6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:SEC_TENS
+R => R.IN3
+M => M.IN2
+clk => clk.IN3
+cout <= n1.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= <GND>
+Q[2] <= Q[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[0] <= Q[0].DB_MAX_OUTPUT_PORT_TYPE
+Qbar[3] <= <VCC>
+Qbar[2] <= d_ff:d2.port4
+Qbar[1] <= d_ff:d1.port4
+Qbar[0] <= Qbar[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:SEC_TENS|logicblockof5d1:LB1
+Mo => A1.IN0
+Mo => A3.IN0
+Mo => A2.IN0
+Mo => A4.IN0
+Q0 => A2.IN1
+Q0 => A3.IN1
+Q0 => A1.IN1
+Q0 => A4.IN1
+Q1 => A3.IN2
+Q1 => A4.IN2
+Q1 => A1.IN2
+Q1 => A2.IN2
+Q2 => A1.IN3
+Q2 => A2.IN3
+Q2 => A3.IN3
+Q2 => A4.IN3
+x <= o1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:SEC_TENS|logicblockof5d2:LB2
+M => A1.IN0
+M => A2.IN0
+M => A5.IN0
+M => A3.IN0
+M => A4.IN0
+Q0 => A1.IN1
+Q0 => A3.IN1
+Q0 => A4.IN1
+Q0 => A5.IN1
+Q1 => A2.IN1
+Q1 => A3.IN2
+Q1 => A5.IN2
+Q2 => A1.IN2
+Q2 => A2.IN2
+Q2 => A4.IN2
+Q2 => A3.IN3
+Q2 => A5.IN3
+x <= o1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:SEC_TENS|d_ff:d0
+d => d.IN1
+rstn => rstn.IN1
+clk => clk.IN1
+q <= d_ff1:mydff.port4
+qbar <= d_ff1:mydff.port5
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:SEC_TENS|d_ff:d0|d_ff1:mydff
+d => n4.IN1
+set => n1.IN0
+set => n5.IN1
+clk => n2.IN1
+clk => n3.IN0
+rest => n2.IN2
+rest => n4.IN2
+rest => n6.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= n6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:SEC_TENS|d_ff:d1
+d => d.IN1
+rstn => rstn.IN1
+clk => clk.IN1
+q <= d_ff1:mydff.port4
+qbar <= d_ff1:mydff.port5
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:SEC_TENS|d_ff:d1|d_ff1:mydff
+d => n4.IN1
+set => n1.IN0
+set => n5.IN1
+clk => n2.IN1
+clk => n3.IN0
+rest => n2.IN2
+rest => n4.IN2
+rest => n6.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= n6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:SEC_TENS|d_ff:d2
+d => d.IN1
+rstn => rstn.IN1
+clk => clk.IN1
+q <= d_ff1:mydff.port4
+qbar <= d_ff1:mydff.port5
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:SEC_TENS|d_ff:d2|d_ff1:mydff
+d => n4.IN1
+set => n1.IN0
+set => n5.IN1
+clk => n2.IN1
+clk => n3.IN0
+rest => n2.IN2
+rest => n4.IN2
+rest => n6.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= n6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|d_ff:d1
+d => d.IN1
+rstn => rstn.IN1
+clk => clk.IN1
+q <= d_ff1:mydff.port4
+qbar <= d_ff1:mydff.port5
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|d_ff:d1|d_ff1:mydff
+d => n4.IN1
+set => n1.IN0
+set => n5.IN1
+clk => n2.IN1
+clk => n3.IN0
+rest => n2.IN2
+rest => n4.IN2
+rest => n6.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= n6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min
+load => load.IN1
+reset => reset.IN1
+CLK => CLK.IN11
+K <= d_ff:d10.port3
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:dl
+d => d.IN1
+rstn => rstn.IN1
+clk => clk.IN1
+q <= d_ff1:mydff.port4
+qbar <= d_ff1:mydff.port5
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:dl|d_ff1:mydff
+d => n4.IN1
+set => n1.IN0
+set => n5.IN1
+clk => n2.IN1
+clk => n3.IN0
+rest => n2.IN2
+rest => n4.IN2
+rest => n6.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= n6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|mux2x1:muxA
+Y <= o1.DB_MAX_OUTPUT_PORT_TYPE
+A => a1.IN0
+B => a2.IN0
+Sel => a2.IN1
+Sel => a1.IN1
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|mux2x1:muxB
+Y <= o1.DB_MAX_OUTPUT_PORT_TYPE
+A => a1.IN0
+B => a2.IN0
+Sel => a2.IN1
+Sel => a1.IN1
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|mux2x1:muxC
+Y <= o1.DB_MAX_OUTPUT_PORT_TYPE
+A => a1.IN0
+B => a2.IN0
+Sel => a2.IN1
+Sel => a1.IN1
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|mux2x1:muxD
+Y <= o1.DB_MAX_OUTPUT_PORT_TYPE
+A => a1.IN0
+B => a2.IN0
+Sel => a2.IN1
+Sel => a1.IN1
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|mux2x1:muxE
+Y <= o1.DB_MAX_OUTPUT_PORT_TYPE
+A => a1.IN0
+B => a2.IN0
+Sel => a2.IN1
+Sel => a1.IN1
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|mux2x1:muxF
+Y <= o1.DB_MAX_OUTPUT_PORT_TYPE
+A => a1.IN0
+B => a2.IN0
+Sel => a2.IN1
+Sel => a1.IN1
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|mux2x1:muxG
+Y <= o1.DB_MAX_OUTPUT_PORT_TYPE
+A => a1.IN0
+B => a2.IN0
+Sel => a2.IN1
+Sel => a1.IN1
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|mux2x1:muxH
+Y <= o1.DB_MAX_OUTPUT_PORT_TYPE
+A => a1.IN0
+B => a2.IN0
+Sel => a2.IN1
+Sel => a1.IN1
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|mux2x1:muxI
+Y <= o1.DB_MAX_OUTPUT_PORT_TYPE
+A => a1.IN0
+B => a2.IN0
+Sel => a2.IN1
+Sel => a1.IN1
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|mux2x1:muxJ
+Y <= o1.DB_MAX_OUTPUT_PORT_TYPE
+A => a1.IN0
+B => a2.IN0
+Sel => a2.IN1
+Sel => a1.IN1
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d0
+d => d.IN1
+rstn => rstn.IN1
+clk => clk.IN1
+q <= d_ff1:mydff.port4
+qbar <= d_ff1:mydff.port5
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d0|d_ff1:mydff
+d => n4.IN1
+set => n1.IN0
+set => n5.IN1
+clk => n2.IN1
+clk => n3.IN0
+rest => n2.IN2
+rest => n4.IN2
+rest => n6.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= n6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d1
+d => d.IN1
+rstn => rstn.IN1
+clk => clk.IN1
+q <= d_ff1:mydff.port4
+qbar <= d_ff1:mydff.port5
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d1|d_ff1:mydff
+d => n4.IN1
+set => n1.IN0
+set => n5.IN1
+clk => n2.IN1
+clk => n3.IN0
+rest => n2.IN2
+rest => n4.IN2
+rest => n6.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= n6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d2
+d => d.IN1
+rstn => rstn.IN1
+clk => clk.IN1
+q <= d_ff1:mydff.port4
+qbar <= d_ff1:mydff.port5
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d2|d_ff1:mydff
+d => n4.IN1
+set => n1.IN0
+set => n5.IN1
+clk => n2.IN1
+clk => n3.IN0
+rest => n2.IN2
+rest => n4.IN2
+rest => n6.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= n6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d3
+d => d.IN1
+rstn => rstn.IN1
+clk => clk.IN1
+q <= d_ff1:mydff.port4
+qbar <= d_ff1:mydff.port5
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d3|d_ff1:mydff
+d => n4.IN1
+set => n1.IN0
+set => n5.IN1
+clk => n2.IN1
+clk => n3.IN0
+rest => n2.IN2
+rest => n4.IN2
+rest => n6.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= n6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d4
+d => d.IN1
+rstn => rstn.IN1
+clk => clk.IN1
+q <= d_ff1:mydff.port4
+qbar <= d_ff1:mydff.port5
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d4|d_ff1:mydff
+d => n4.IN1
+set => n1.IN0
+set => n5.IN1
+clk => n2.IN1
+clk => n3.IN0
+rest => n2.IN2
+rest => n4.IN2
+rest => n6.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= n6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d5
+d => d.IN1
+rstn => rstn.IN1
+clk => clk.IN1
+q <= d_ff1:mydff.port4
+qbar <= d_ff1:mydff.port5
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d5|d_ff1:mydff
+d => n4.IN1
+set => n1.IN0
+set => n5.IN1
+clk => n2.IN1
+clk => n3.IN0
+rest => n2.IN2
+rest => n4.IN2
+rest => n6.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= n6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d6
+d => d.IN1
+rstn => rstn.IN1
+clk => clk.IN1
+q <= d_ff1:mydff.port4
+qbar <= d_ff1:mydff.port5
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d6|d_ff1:mydff
+d => n4.IN1
+set => n1.IN0
+set => n5.IN1
+clk => n2.IN1
+clk => n3.IN0
+rest => n2.IN2
+rest => n4.IN2
+rest => n6.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= n6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d7
+d => d.IN1
+rstn => rstn.IN1
+clk => clk.IN1
+q <= d_ff1:mydff.port4
+qbar <= d_ff1:mydff.port5
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d7|d_ff1:mydff
+d => n4.IN1
+set => n1.IN0
+set => n5.IN1
+clk => n2.IN1
+clk => n3.IN0
+rest => n2.IN2
+rest => n4.IN2
+rest => n6.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= n6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d8
+d => d.IN1
+rstn => rstn.IN1
+clk => clk.IN1
+q <= d_ff1:mydff.port4
+qbar <= d_ff1:mydff.port5
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d8|d_ff1:mydff
+d => n4.IN1
+set => n1.IN0
+set => n5.IN1
+clk => n2.IN1
+clk => n3.IN0
+rest => n2.IN2
+rest => n4.IN2
+rest => n6.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= n6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d9
+d => d.IN1
+rstn => rstn.IN1
+clk => clk.IN1
+q <= d_ff1:mydff.port4
+qbar <= d_ff1:mydff.port5
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d9|d_ff1:mydff
+d => n4.IN1
+set => n1.IN0
+set => n5.IN1
+clk => n2.IN1
+clk => n3.IN0
+rest => n2.IN2
+rest => n4.IN2
+rest => n6.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= n6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d10
+d => d.IN1
+rstn => rstn.IN1
+clk => clk.IN1
+q <= d_ff1:mydff.port4
+qbar <= d_ff1:mydff.port5
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|serielload5:load5min|d_ff:d10|d_ff1:mydff
+d => n4.IN1
+set => n1.IN0
+set => n5.IN1
+clk => n2.IN1
+clk => n3.IN0
+rest => n2.IN2
+rest => n4.IN2
+rest => n6.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= n6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES
+R => R.IN4
+M => M.IN3
+clk => clk.IN4
+cout <= n1.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[0] <= Q[0].DB_MAX_OUTPUT_PORT_TYPE
+Qbar[3] <= d_ff:d3.port4
+Qbar[2] <= d_ff:d2.port4
+Qbar[1] <= d_ff:d1.port4
+Qbar[0] <= Qbar[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES|logicblockof9d1:LB1
+M => A3.IN0
+M => A4.IN0
+M => A5.IN0
+M => A1.IN0
+M => A2.IN0
+Q0 => A1.IN1
+Q0 => A3.IN1
+Q0 => A2.IN1
+Q0 => A4.IN1
+Q0 => A5.IN1
+Q1 => A2.IN2
+Q1 => A3.IN2
+Q1 => A1.IN2
+Q1 => A4.IN2
+Q1 => A5.IN2
+Q2 => A4.IN3
+Q2 => A5.IN3
+Q3 => A5.IN4
+Q3 => A1.IN3
+Q3 => A2.IN3
+Q3 => A3.IN3
+Q3 => A4.IN4
+x <= o1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES|logicblockof9d2:LB2
+M => A3.IN0
+M => A5.IN0
+M => A1.IN0
+M => A4.IN0
+Q0 => A3.IN1
+Q0 => A4.IN1
+Q0 => A2.IN0
+Q0 => A5.IN1
+Q1 => A2.IN1
+Q1 => A4.IN2
+Q1 => A1.IN1
+Q1 => A5.IN2
+Q2 => A1.IN2
+Q2 => A2.IN2
+Q2 => A3.IN2
+Q2 => A4.IN3
+Q2 => A5.IN3
+Q3 => A5.IN4
+Q3 => A1.IN3
+Q3 => A2.IN3
+Q3 => A3.IN3
+Q3 => A4.IN4
+x <= o1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES|logicblockof9d3:LB3
+M => A1.IN0
+M => A2.IN0
+M => A3.IN0
+M => A6.IN0
+M => A4.IN0
+M => A5.IN0
+Q0 => A1.IN1
+Q0 => A4.IN1
+Q0 => A5.IN1
+Q0 => A6.IN1
+Q1 => A2.IN1
+Q1 => A4.IN2
+Q1 => A5.IN2
+Q1 => A6.IN2
+Q2 => A3.IN1
+Q2 => A4.IN3
+Q2 => A5.IN3
+Q2 => A6.IN3
+Q3 => A1.IN2
+Q3 => A2.IN2
+Q3 => A3.IN2
+Q3 => A5.IN4
+Q3 => A4.IN4
+Q3 => A6.IN4
+x <= o1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES|d_ff:d0
+d => d.IN1
+rstn => rstn.IN1
+clk => clk.IN1
+q <= d_ff1:mydff.port4
+qbar <= d_ff1:mydff.port5
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES|d_ff:d0|d_ff1:mydff
+d => n4.IN1
+set => n1.IN0
+set => n5.IN1
+clk => n2.IN1
+clk => n3.IN0
+rest => n2.IN2
+rest => n4.IN2
+rest => n6.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= n6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES|d_ff:d1
+d => d.IN1
+rstn => rstn.IN1
+clk => clk.IN1
+q <= d_ff1:mydff.port4
+qbar <= d_ff1:mydff.port5
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES|d_ff:d1|d_ff1:mydff
+d => n4.IN1
+set => n1.IN0
+set => n5.IN1
+clk => n2.IN1
+clk => n3.IN0
+rest => n2.IN2
+rest => n4.IN2
+rest => n6.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= n6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES|d_ff:d2
+d => d.IN1
+rstn => rstn.IN1
+clk => clk.IN1
+q <= d_ff1:mydff.port4
+qbar <= d_ff1:mydff.port5
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES|d_ff:d2|d_ff1:mydff
+d => n4.IN1
+set => n1.IN0
+set => n5.IN1
+clk => n2.IN1
+clk => n3.IN0
+rest => n2.IN2
+rest => n4.IN2
+rest => n6.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= n6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES|d_ff:d3
+d => d.IN1
+rstn => rstn.IN1
+clk => clk.IN1
+q <= d_ff1:mydff.port4
+qbar <= d_ff1:mydff.port5
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO9C:MIN_ONES|d_ff:d3|d_ff1:mydff
+d => n4.IN1
+set => n1.IN0
+set => n5.IN1
+clk => n2.IN1
+clk => n3.IN0
+rest => n2.IN2
+rest => n4.IN2
+rest => n6.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= n6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|d_ff:d2
+d => d.IN1
+rstn => rstn.IN1
+clk => clk.IN1
+q <= d_ff1:mydff.port4
+qbar <= d_ff1:mydff.port5
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|d_ff:d2|d_ff1:mydff
+d => n4.IN1
+set => n1.IN0
+set => n5.IN1
+clk => n2.IN1
+clk => n3.IN0
+rest => n2.IN2
+rest => n4.IN2
+rest => n6.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= n6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:MIN_TENS
+R => R.IN3
+M => M.IN2
+clk => clk.IN3
+cout <= n1.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= <GND>
+Q[2] <= Q[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[0] <= Q[0].DB_MAX_OUTPUT_PORT_TYPE
+Qbar[3] <= <VCC>
+Qbar[2] <= d_ff:d2.port4
+Qbar[1] <= d_ff:d1.port4
+Qbar[0] <= Qbar[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:MIN_TENS|logicblockof5d1:LB1
+Mo => A1.IN0
+Mo => A3.IN0
+Mo => A2.IN0
+Mo => A4.IN0
+Q0 => A2.IN1
+Q0 => A3.IN1
+Q0 => A1.IN1
+Q0 => A4.IN1
+Q1 => A3.IN2
+Q1 => A4.IN2
+Q1 => A1.IN2
+Q1 => A2.IN2
+Q2 => A1.IN3
+Q2 => A2.IN3
+Q2 => A3.IN3
+Q2 => A4.IN3
+x <= o1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:MIN_TENS|logicblockof5d2:LB2
+M => A1.IN0
+M => A2.IN0
+M => A5.IN0
+M => A3.IN0
+M => A4.IN0
+Q0 => A1.IN1
+Q0 => A3.IN1
+Q0 => A4.IN1
+Q0 => A5.IN1
+Q1 => A2.IN1
+Q1 => A3.IN2
+Q1 => A5.IN2
+Q2 => A1.IN2
+Q2 => A2.IN2
+Q2 => A4.IN2
+Q2 => A3.IN3
+Q2 => A5.IN3
+x <= o1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:MIN_TENS|d_ff:d0
+d => d.IN1
+rstn => rstn.IN1
+clk => clk.IN1
+q <= d_ff1:mydff.port4
+qbar <= d_ff1:mydff.port5
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:MIN_TENS|d_ff:d0|d_ff1:mydff
+d => n4.IN1
+set => n1.IN0
+set => n5.IN1
+clk => n2.IN1
+clk => n3.IN0
+rest => n2.IN2
+rest => n4.IN2
+rest => n6.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= n6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:MIN_TENS|d_ff:d1
+d => d.IN1
+rstn => rstn.IN1
+clk => clk.IN1
+q <= d_ff1:mydff.port4
+qbar <= d_ff1:mydff.port5
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:MIN_TENS|d_ff:d1|d_ff1:mydff
+d => n4.IN1
+set => n1.IN0
+set => n5.IN1
+clk => n2.IN1
+clk => n3.IN0
+rest => n2.IN2
+rest => n4.IN2
+rest => n6.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= n6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:MIN_TENS|d_ff:d2
+d => d.IN1
+rstn => rstn.IN1
+clk => clk.IN1
+q <= d_ff1:mydff.port4
+qbar <= d_ff1:mydff.port5
+
+
+|STOPWATCH|MIN_SEC_COUNTER:MYCLKCOUNT|UPTO5C:MIN_TENS|d_ff:d2|d_ff1:mydff
+d => n4.IN1
+set => n1.IN0
+set => n5.IN1
+clk => n2.IN1
+clk => n3.IN0
+rest => n2.IN2
+rest => n4.IN2
+rest => n6.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+qbar <= n6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|STOPWATCH|Todisplay:MYDISPLAY
+IsErr => IsErr.IN16
+COUNT0[0] => COUNT0[0].IN1
+COUNT0[1] => COUNT0[1].IN1
+COUNT0[2] => COUNT0[2].IN1
+COUNT0[3] => COUNT0[3].IN1
+COUNT1[0] => COUNT1[0].IN1
+COUNT1[1] => COUNT1[1].IN1
+COUNT1[2] => COUNT1[2].IN1
+COUNT1[3] => COUNT1[3].IN1
+COUNT2[0] => COUNT2[0].IN1
+COUNT2[1] => COUNT2[1].IN1
+COUNT2[2] => COUNT2[2].IN1
+COUNT2[3] => COUNT2[3].IN1
+COUNT3[0] => COUNT3[0].IN1
+COUNT3[1] => COUNT3[1].IN1
+COUNT3[2] => COUNT3[2].IN1
+COUNT3[3] => COUNT3[3].IN1
+ERROR0[0] => ERROR0[0].IN1
+ERROR0[1] => ERROR0[1].IN1
+ERROR0[2] => ERROR0[2].IN1
+ERROR0[3] => ERROR0[3].IN1
+ERROR1[0] => ERROR1[0].IN1
+ERROR1[1] => ERROR1[1].IN1
+ERROR1[2] => ERROR1[2].IN1
+ERROR1[3] => ERROR1[3].IN1
+ERROR2[0] => ERROR2[0].IN1
+ERROR2[1] => ERROR2[1].IN1
+ERROR2[2] => ERROR2[2].IN1
+ERROR2[3] => ERROR2[3].IN1
+ERROR3[0] => ERROR3[0].IN1
+ERROR3[1] => ERROR3[1].IN1
+ERROR3[2] => ERROR3[2].IN1
+ERROR3[3] => ERROR3[3].IN1
+SVNSG0[0] <= mux2x1:mymux00.port0
+SVNSG0[1] <= mux2x1:mymux01.port0
+SVNSG0[2] <= mux2x1:mymux02.port0
+SVNSG0[3] <= mux2x1:mymux03.port0
+SVNSG1[0] <= mux2x1:mymux10.port0
+SVNSG1[1] <= mux2x1:mymux11.port0
+SVNSG1[2] <= mux2x1:mymux12.port0
+SVNSG1[3] <= mux2x1:mymux13.port0
+SVNSG2[0] <= mux2x1:mymux20.port0
+SVNSG2[1] <= mux2x1:mymux21.port0
+SVNSG2[2] <= mux2x1:mymux22.port0
+SVNSG2[3] <= mux2x1:mymux23.port0
+SVNSG3[0] <= mux2x1:mymux30.port0
+SVNSG3[1] <= mux2x1:mymux31.port0
+SVNSG3[2] <= mux2x1:mymux32.port0
+SVNSG3[3] <= mux2x1:mymux33.port0
+
+
+|STOPWATCH|Todisplay:MYDISPLAY|mux2x1:mymux00
+Y <= o1.DB_MAX_OUTPUT_PORT_TYPE
+A => a1.IN0
+B => a2.IN0
+Sel => a2.IN1
+Sel => a1.IN1
+
+
+|STOPWATCH|Todisplay:MYDISPLAY|mux2x1:mymux01
+Y <= o1.DB_MAX_OUTPUT_PORT_TYPE
+A => a1.IN0
+B => a2.IN0
+Sel => a2.IN1
+Sel => a1.IN1
+
+
+|STOPWATCH|Todisplay:MYDISPLAY|mux2x1:mymux02
+Y <= o1.DB_MAX_OUTPUT_PORT_TYPE
+A => a1.IN0
+B => a2.IN0
+Sel => a2.IN1
+Sel => a1.IN1
+
+
+|STOPWATCH|Todisplay:MYDISPLAY|mux2x1:mymux03
+Y <= o1.DB_MAX_OUTPUT_PORT_TYPE
+A => a1.IN0
+B => a2.IN0
+Sel => a2.IN1
+Sel => a1.IN1
+
+
+|STOPWATCH|Todisplay:MYDISPLAY|mux2x1:mymux10
+Y <= o1.DB_MAX_OUTPUT_PORT_TYPE
+A => a1.IN0
+B => a2.IN0
+Sel => a2.IN1
+Sel => a1.IN1
+
+
+|STOPWATCH|Todisplay:MYDISPLAY|mux2x1:mymux11
+Y <= o1.DB_MAX_OUTPUT_PORT_TYPE
+A => a1.IN0
+B => a2.IN0
+Sel => a2.IN1
+Sel => a1.IN1
+
+
+|STOPWATCH|Todisplay:MYDISPLAY|mux2x1:mymux12
+Y <= o1.DB_MAX_OUTPUT_PORT_TYPE
+A => a1.IN0
+B => a2.IN0
+Sel => a2.IN1
+Sel => a1.IN1
+
+
+|STOPWATCH|Todisplay:MYDISPLAY|mux2x1:mymux13
+Y <= o1.DB_MAX_OUTPUT_PORT_TYPE
+A => a1.IN0
+B => a2.IN0
+Sel => a2.IN1
+Sel => a1.IN1
+
+
+|STOPWATCH|Todisplay:MYDISPLAY|mux2x1:mymux20
+Y <= o1.DB_MAX_OUTPUT_PORT_TYPE
+A => a1.IN0
+B => a2.IN0
+Sel => a2.IN1
+Sel => a1.IN1
+
+
+|STOPWATCH|Todisplay:MYDISPLAY|mux2x1:mymux21
+Y <= o1.DB_MAX_OUTPUT_PORT_TYPE
+A => a1.IN0
+B => a2.IN0
+Sel => a2.IN1
+Sel => a1.IN1
+
+
+|STOPWATCH|Todisplay:MYDISPLAY|mux2x1:mymux22
+Y <= o1.DB_MAX_OUTPUT_PORT_TYPE
+A => a1.IN0
+B => a2.IN0
+Sel => a2.IN1
+Sel => a1.IN1
+
+
+|STOPWATCH|Todisplay:MYDISPLAY|mux2x1:mymux23
+Y <= o1.DB_MAX_OUTPUT_PORT_TYPE
+A => a1.IN0
+B => a2.IN0
+Sel => a2.IN1
+Sel => a1.IN1
+
+
+|STOPWATCH|Todisplay:MYDISPLAY|mux2x1:mymux30
+Y <= o1.DB_MAX_OUTPUT_PORT_TYPE
+A => a1.IN0
+B => a2.IN0
+Sel => a2.IN1
+Sel => a1.IN1
+
+
+|STOPWATCH|Todisplay:MYDISPLAY|mux2x1:mymux31
+Y <= o1.DB_MAX_OUTPUT_PORT_TYPE
+A => a1.IN0
+B => a2.IN0
+Sel => a2.IN1
+Sel => a1.IN1
+
+
+|STOPWATCH|Todisplay:MYDISPLAY|mux2x1:mymux32
+Y <= o1.DB_MAX_OUTPUT_PORT_TYPE
+A => a1.IN0
+B => a2.IN0
+Sel => a2.IN1
+Sel => a1.IN1
+
+
+|STOPWATCH|Todisplay:MYDISPLAY|mux2x1:mymux33
+Y <= o1.DB_MAX_OUTPUT_PORT_TYPE
+A => a1.IN0
+B => a2.IN0
+Sel => a2.IN1
+Sel => a1.IN1
+
+
+|STOPWATCH|disp_hex_mux:finaldisplay
+clk => q_reg[0].CLK
+clk => q_reg[1].CLK
+clk => q_reg[2].CLK
+clk => q_reg[3].CLK
+reset => q_reg[0].ACLR
+reset => q_reg[1].ACLR
+reset => q_reg[2].ACLR
+reset => q_reg[3].ACLR
+hex3[0] => Mux3.IN0
+hex3[1] => Mux2.IN0
+hex3[2] => Mux1.IN0
+hex3[3] => Mux0.IN0
+hex2[0] => Mux3.IN1
+hex2[1] => Mux2.IN1
+hex2[2] => Mux1.IN1
+hex2[3] => Mux0.IN1
+hex1[0] => Mux3.IN2
+hex1[1] => Mux2.IN2
+hex1[2] => Mux1.IN2
+hex1[3] => Mux0.IN2
+hex0[0] => Mux3.IN3
+hex0[1] => Mux2.IN3
+hex0[2] => Mux1.IN3
+hex0[3] => Mux0.IN3
+dp_in[0] => Mux4.IN3
+dp_in[1] => Mux4.IN2
+dp_in[2] => Mux4.IN1
+dp_in[3] => Mux4.IN0
+an[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+an[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+an[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+an[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+sseg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+sseg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+sseg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+sseg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+sseg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+sseg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+sseg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+sseg[7] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+
+
