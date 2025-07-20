@@ -26,5 +26,5 @@ To evaluate how kernel choice and tuning parameters affect classification accura
 - Summarize results with accuracy scores and plots
 
 ## 📷 Sample Output
-![SVM Kernel Comparison](Screenshot 2025-07-21 010440.png)
+![SVM Kernel Comparison](Screenshot.png)
 
